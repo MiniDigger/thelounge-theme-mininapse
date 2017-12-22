@@ -1,0 +1,26 @@
+{
+  "name": "thelounge-theme-mininapse",
+  "version": "1.0.0",
+  "description": "A dark, minimal theme for thelounge",
+  "main": "package.json",
+  "thelounge": {
+    "css": "mininapse.css",
+    "name": "Mininapse",
+    "type": "theme"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/MiniDigger/thelounge-theme-mininapse",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MiniDigger/thelounge-theme-mininapse.git"
+  },
+  "keywords": [
+    "thelounge",
+    "thelounge-theme",
+    "minidigger",
+    "dark"
+  ],
+  "bugs": {
+    "url": "https://github.com/MiniDigger/thelounge-theme-mininapse/issues"
+  }
+}
