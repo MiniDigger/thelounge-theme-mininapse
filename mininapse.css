@@ -1,11 +1,14 @@
+/** 
+ * mininapse
+ * lounge theme (fork fork) by MiniDigger
+ * https://github.com/MiniDigger/thelounge-theme-mininapse
+ */
+
 /**
  * synapse traditional
  * lounge theme (fork) by danieloaks
  * https://github.com/DanielOaks/lounge-synapse
  */
-body {
-    color: RED;
-}
 
 /**
  * neuron dark
@@ -13,6 +16,7 @@ body {
  * designed for use with 16 nickname colors
  * i'll make a fork someday.
  */
+
 /* we comment out the following fonts line, and add our changes at the end of the file */
 /*@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,200,200italic,300italic,300,400italic,600,600italic,700italic,700,900,900italic|Source+Code+Pro:400,900,700,600,500,300,200);*/
 /* neuron base16 colors
