@@ -1,14 +1,11 @@
-/** 
- * mininapse
- * lounge theme (fork fork) by MiniDigger
- * https://github.com/MiniDigger/thelounge-theme-mininapse
- */
-
 /**
  * synapse traditional
  * lounge theme (fork) by danieloaks
  * https://github.com/DanielOaks/lounge-synapse
  */
+body {
+    color: RED;
+}
 
 /**
  * neuron dark
@@ -16,10 +13,8 @@
  * designed for use with 16 nickname colors
  * i'll make a fork someday.
  */
-
 /* we comment out the following fonts line, and add our changes at the end of the file */
 /*@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,200,200italic,300italic,300,400italic,600,600italic,700italic,700,900,900italic|Source+Code+Pro:400,900,700,600,500,300,200);*/
-
 /* neuron base16 colors
  * BASE 00: #1C1919
  * BASE 01: #282525
@@ -38,7 +33,6 @@
  * BASE 0E: #AD5472
  * BASE 0F: #BD8D46
  */
-
 /* irc colors
  * 0, white: #F6F6F6
  * 1, black: #1C1919
@@ -57,7 +51,6 @@
  * 15, grey: #403D3C
  * 16, light grey: #8E8484
  */
-
 body {
     background-color: #282525;
     font-family: 'Source Sans Pro';
@@ -69,7 +62,8 @@ body {
     top: 0;
     right: 0;
     border-radius: 0;
-    background: #282525;
+    /* background: #282525;*/
+    background: red;
 }
 
 #form {
@@ -188,6 +182,7 @@ body {
 #chat .notice .time {
     color: #403D3C !important;
 }
+
 #chat .notice .text, #chat .chan .notice .user {
     color: #EF4657 !important;
 }
@@ -251,124 +246,155 @@ body {
 #chat.colored-nicks .user.color-1, #chat.colored-nicks .user.color-17 {
     color: #EF4657;
 }
+
 #chat.colored-nicks .user.color-2, #chat.colored-nicks .user.color-18 {
     color: #FF93A4;
 }
+
 #chat.colored-nicks .user.color-3, #chat.colored-nicks .user.color-19 {
     color: #FFB03B;
 }
+
 #chat.colored-nicks .user.color-4, #chat.colored-nicks .user.color-20 {
     color: #CC7D08;
 }
+
 #chat.colored-nicks .user.color-5, #chat.colored-nicks .user.color-21 {
     color: #FFD34E;
 }
+
 #chat.colored-nicks .user.color-6, #chat.colored-nicks .user.color-22 {
     color: #CCA01B;
 }
+
 #chat.colored-nicks .user.color-7, #chat.colored-nicks .user.color-23 {
     color: #ACF046;
 }
+
 #chat.colored-nicks .user.color-8, #chat.colored-nicks .user.color-24 {
     color: #D5F572;
 }
+
 #chat.colored-nicks .user.color-9, #chat.colored-nicks .user.color-25 {
     color: #499E8D;
 }
+
 #chat.colored-nicks .user.color-10, #chat.colored-nicks .user.color-26 {
     color: #B5FFE1;
 }
+
 #chat.colored-nicks .user.color-11, #chat.colored-nicks .user.color-27 {
     color: #35A7FF;
 }
+
 #chat.colored-nicks .user.color-12, #chat.colored-nicks .user.color-28 {
     color: #91A6FF;
 }
+
 #chat.colored-nicks .user.color-13, #chat.colored-nicks .user.color-29 {
     color: #8A46F0;
 }
+
 #chat.colored-nicks .user.color-14, #chat.colored-nicks .user.color-30 {
     color: #FF88DC;
 }
+
 #chat.colored-nicks .user.color-15, #chat.colored-nicks .user.color-31 {
     color: #BD8D46;
 }
+
 #chat.colored-nicks .user.color-16, #chat.colored-nicks .user.color-32 {
     color: #F0C079;
 }
 
-/* *********************** */
 /* *** SYNAPSE CHANGES *** */
-/* *********************** */
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:b,i,bi);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:b,i,bi); body {
+    font-family: "Open Sans", sans-serif;
+}
 
-body {
-	font-family: "Open Sans", sans-serif;
-}
 #chat .user-mode + .user-mode {
-	padding-top: 1rem;
+    padding-top: 1rem;
 }
+
 #chat .user-mode::before {
-	display: none;
+    display: none;
 }
+
 #chat .from {
-	min-width: 0;
-	max-width: 40rem;
-	padding-left: 1rem;
-	padding-right: 1rem;
-	border-right: none;
+    min-width: 0;
+    max-width: 40rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-right: none;
     white-space: nowrap;
 }
+
 #chat .from .user::before {
-	content: "<";
-	color: #444141;
-}
-#chat .from .user::after {
-	content: ">";
-	color: #444141;
-}
-#chat .text {
-	padding-left: 0;
+    content: "<";
+    color: #444141;
 }
 
-/* ****************************** */
-/* ***** mininapse changes ****** */
-/* ****************************** */
-#chat .toggle-content.toggle-type-link a::after{
-	background: none !important; /* no gradient on link preview */
+#chat .from .user::after {
+    content: ">";
+    color: #444141;
 }
+
+#chat .text {
+    padding-left: 0;
+}
+
+/* ****** my changes ******* */
+#chat .toggle-content.toggle-type-link a::after {
+    background: none !important;
+    /* no gradient on link preview */
+}
+
 #chat .toggle-content {
-    background: none !important; /* no white image preview */
+    background: none !important;
+    /* no white image preview */
 }
+
 #chat .toggle-content a {
-    color: #EAE9E9;; /* text in white for image preview */
+    color: #EAE9E9;
+    ; /* text in white for image preview */
 }
+
 #chat .time {
-    color: #7D7A79; /* make chat time readable */
+    color: #7D7A79;
+    /* make chat time readable */
 }
+
 /** fix user search bar placeholder **/
-::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+::-webkit-input-placeholder {
+    /* WebKit, Blink, Edge */
     color: #999;
 }
-:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
-   color: #999;
-   opacity: 1;
+
+:-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 */
+    color: #999;
+    opacity: 1;
 }
-::-moz-placeholder { /* Mozilla Firefox 19+ */
-   color: #999;
-   opacity: 1;
+
+::-moz-placeholder {
+    /* Mozilla Firefox 19+ */
+    color: #999;
+    opacity: 1;
 }
-:-ms-input-placeholder { /* Internet Explorer 10-11 */
-   color: #999;;
-}
+
+:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: #999;
+    ; }
 
 /** url readable **/
 .irc-fg2 {
     color: #036cd8;
 }
 
-#chat .from:after{
-    background: none; /* no gradient after username */
+#chat .from:after {
+    background: none;
+    /* no gradient after username */
 }
 
 /* previews */
@@ -379,64 +405,85 @@ body {
     margin-bottom: -20px;
 }
 
-#chat .toggle-content .body, #chat .toggle-content .head{
+#chat .toggle-content .body, #chat .toggle-content .head {
     white-space: normal;
 }
 
-.toggle-text{
+.toggle-text {
     max-height: 100px;
     margin-top: 30px;
 }
 
-.preview{
+.preview {
     white-space: normal;
 }
 
-/* remove laggy animation */
-#image-viewer{
-    transition: none;	
+/* fix date marker */
+#chat .date-marker-text::before{
+    color: rgba(0, 107, 59, 1);
+    background-color: #282525;
 }
 
-/* ***************************** */
 /* ****** public css mods ****** */
-/* ***************************** */
 /* Better CSS box */
 #user-specified-css-input {
     font-family: monospace;
     height: 400px;
 }
+
 /* Compact sidebar */
 #sidebar .networks {
     padding: 6px 2px 6px 30px;
 }
+
 #sidebar .network {
     margin-bottom: 10px;
 }
+
 #sidebar .chan {
     margin-right: 20px;
     padding: 2px 5px 4px 5px;
     width: auto;
 }
+
 #sidebar .chan:before {
     display: none;
 }
+
 #sidebar .chan .badge {
     margin-top: -1px;
     right: 5px !important;
 }
+
 #sidebar .chan .close {
-    top: 2px; right: -5px;
+    top: 2px;
+    right: -5px;
 }
 
 /*Thinner user sidebar*/
 #chat .sidebar {
     width: 150px
 }
-#chat .chat {
+
+#chat .channel .chat {
     right: 150px
 }
+/* hide wendy spam */
+#chat .msg[data-from="Wendy"] div.preview  {
+    display:none;
+}
 
-/* don't display link previews for github */ 
-div.preview[data-url*="github.com"] {
-   display:none;
-} 
+/*Thinner sidebar*/
+#sidebar,
+#footer,
+.tse-scroll-content {
+    width: 150px /*Change this to choose a width, change #main to the same*/
+}
+
+#main {
+    left: 150px
+}
+
+#sidebar div.chan {
+    width: 120px /*Change this to roughly 20-30px less than the width*/
+}
