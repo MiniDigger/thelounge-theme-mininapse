@@ -469,9 +469,12 @@ body {
     width: 150px
 }
 
-#chat .channel .chat {
-    right: 150px
+@media (min-width: 479px){
+    #chat .channel .chat {
+        right: 150px;
+    }
 }
+
 /* hide wendy spam */
 #chat .msg[data-from="Wendy"] div.preview  {
     display:none;
@@ -484,8 +487,10 @@ body {
     width: 150px /*Change this to choose a width, change #main to the same*/
 }
 
-#main {
-    left: 150px
+@media (min-width: 479px){
+    #main {
+        left: 150px;
+    }
 }
 
 #sidebar div.chan {
