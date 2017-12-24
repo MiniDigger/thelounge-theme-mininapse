@@ -424,8 +424,12 @@ body {
 
 /* fix date marker */
 #chat .date-marker-text::before{
-    color: rgba(0, 107, 59, 1);
+    color: #236b2b;
     background-color: #282525;
+}
+
+#chat .date-marker::before {
+    border-top: 1px solid #236b2b;
 }
 
 /* make time widget wide enough to fit seconds */
