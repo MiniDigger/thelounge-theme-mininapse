@@ -469,7 +469,7 @@ body {
     width: 150px
 }
 
-@media (min-width: 479px){
+@media (min-width: 768px){
     #chat .channel .chat {
         right: 150px;
     }
@@ -487,7 +487,7 @@ body {
     width: 150px /*Change this to choose a width, change #main to the same*/
 }
 
-@media (min-width: 479px){
+@media (min-width: 768px){
     #main {
         left: 150px;
     }
