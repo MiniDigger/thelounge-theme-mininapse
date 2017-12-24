@@ -428,6 +428,11 @@ body {
     background-color: #282525;
 }
 
+/* make time widget wide enough to fit seconds */
+#chat.show-seconds .time {
+    width: 76px;
+}
+
 /* ****** public css mods ****** */
 /* Better CSS box */
 #user-specified-css-input {
