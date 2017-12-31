@@ -437,6 +437,11 @@ body {
     width: 76px;
 }
 
+/* prevent chrome from underlining links */
+a:-webkit-any-link {
+    text-decoration: none;
+}
+
 /* ****** public css mods ****** */
 /* Better CSS box */
 #user-specified-css-input {
@@ -471,6 +476,11 @@ body {
 #sidebar .chan .close {
     top: 2px;
     right: -5px;
+}
+
+#sidebar .badge, #sidebar .close {
+    margin-left: 5px;
+    margin-right: 5px;  
 }
 
 /*Thinner user sidebar*/
