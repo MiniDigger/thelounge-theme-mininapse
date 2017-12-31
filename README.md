@@ -1,6 +1,14 @@
 # thelounge-theme-mininapse
-my theme for the irc client thelounge ~ fork of a fork of a fork 
+a dark, minimal theme for the irc client thelounge ~ fork of a fork of a fork 
 
-![https://i.imgur.com/rf4YiuW.png](https://i.imgur.com/rf4YiuW.png)
+## Screenshots
 
-![https://i.imgur.com/X7485rY.png](https://i.imgur.com/X7485rY.png)
+![https://i.imgur.com/rf4YiuW.png](https://i.imgur.com/rf4YiuW.png)  
+![https://i.imgur.com/X7485rY.png](https://i.imgur.com/X7485rY.png)  
+
+## Installation
+
+when you have installed thelounge via npm:  
+```thelounge install thelounge-theme-mininapse```  
+when you have installed thelounge via source:  
+```node index.js install thelounge-theme-mininapse```
