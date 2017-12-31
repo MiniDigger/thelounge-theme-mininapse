@@ -437,6 +437,11 @@ body {
     width: 76px;
 }
 
+/* prevent chrome from underlining links */
+a:-webkit-any-link {
+    text-decoration: none;
+}
+
 /* ****** public css mods ****** */
 /* Better CSS box */
 #user-specified-css-input {
