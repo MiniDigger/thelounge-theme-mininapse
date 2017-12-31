@@ -473,6 +473,10 @@ body {
     right: -5px;
 }
 
+#sidebar .badge, #sidebar .close {
+    margin: 0px;   
+}
+
 /*Thinner user sidebar*/
 #chat .sidebar {
     width: 150px
