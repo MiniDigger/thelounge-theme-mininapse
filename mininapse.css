@@ -479,7 +479,8 @@ a:-webkit-any-link {
 }
 
 #sidebar .badge, #sidebar .close {
-    margin: 0px;   
+    margin-left: 5px;
+    margin-right: 5px;  
 }
 
 /*Thinner user sidebar*/
