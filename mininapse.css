@@ -442,6 +442,17 @@ a:-webkit-any-link {
     text-decoration: none;
 }
 
+/* make code boxes stand out less */
+code{
+    color: #fc1700;
+    background-color: #b0adae;
+}
+
+kbd{
+    background-color: #b0adae;
+    color: #1e1e1e;
+}
+
 /* ****** public css mods ****** */
 /* Better CSS box */
 #user-specified-css-input {
