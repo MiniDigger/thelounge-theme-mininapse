@@ -503,15 +503,15 @@ a:-webkit-any-link {
 #sidebar,
 #footer,
 .tse-scroll-content {
-    width: 150px /*Change this to choose a width, change #main to the same*/
+    width: 200px /*Change this to choose a width, change #main to the same*/
 }
 
 @media (min-width: 768px){
     #main {
-        left: 150px;
+        left: 200px;
     }
 }
 
 #sidebar div.chan {
-    width: 120px /*Change this to roughly 20-30px less than the width*/
+    width: 140px /*Change this to roughly 20-30px less than the width*/
 }
