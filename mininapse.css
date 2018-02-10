@@ -466,11 +466,11 @@ kbd{
 /* Make join-channel box align with network names */
 #sidebar .join-form .input {
     margin-left: 5px;
-    width: 90%;
+    width: 95%;
 }
 
 #sidebar .join-form .btn {
-    width: 90%;
+    width: 95%;
     margin-left: 5px;
     /* margin: auto; */
 }
