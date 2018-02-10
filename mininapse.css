@@ -461,7 +461,6 @@ kbd{
 /* Make join-channel box align with network names */
 #sidebar .join-form .input {
 	margin-left: 5px;
-	margin-right: auto;
 	width: 90%;
 }
 
