@@ -1,16 +1,16 @@
-/** 
+/* 
  * mininapse
  * lounge theme (fork fork) by MiniDigger
  * https://github.com/MiniDigger/thelounge-theme-mininapse
  */
 
-/**
+/*
  * synapse traditional
  * lounge theme (fork) by danieloaks
  * https://github.com/DanielOaks/lounge-synapse
  */
 
-/**
+/*
  * neuron dark
  * lounge theme by easymac
  * designed for use with 16 nickname colors
@@ -347,7 +347,7 @@ body {
     padding-left: 0;
 }
 
-/* ****** my changes ******* */
+/* ****** Changes made in Mininapse fork ******* */
 #chat .toggle-content.toggle-type-link a::after {
     background: none !important;
     /* no gradient on link preview */
@@ -355,20 +355,20 @@ body {
 
 #chat .toggle-content {
     background: none !important;
-    /* no white image preview */
+    /* No white image preview */
 }
 
 #chat .toggle-content a {
     color: #EAE9E9;
-    ; /* text in white for image preview */
+    ; /* Text in white for image preview */
 }
 
 #chat .time {
     color: #7D7A79;
-    /* make chat time readable */
+    /* Make chat time readable */
 }
 
-/** fix user search bar placeholder **/
+/* Fix user search bar placeholder */
 ::-webkit-input-placeholder {
     /* WebKit, Blink, Edge */
     color: #999;
@@ -391,17 +391,17 @@ body {
     color: #999;
     ; }
 
-/** url readable **/
+/* Url readable */
 .irc-fg2 {
     color: #036cd8;
 }
 
 #chat .from:after {
     background: none;
-    /* no gradient after username */
+    /* No gradient after username */
 }
 
-/* previews */
+/* Previews */
 #chat .toggle-content .thumb, #chat .toggle-content img {
     max-width: 300px;
     max-height: 150px;
@@ -422,7 +422,7 @@ body {
     white-space: normal;
 }
 
-/* fix date marker */
+/* Fix date marker */
 #chat .date-marker-text::before{
     color: #236b2b;
     background-color: #282525;
@@ -432,17 +432,17 @@ body {
     border-top: 1px solid #236b2b;
 }
 
-/* make time widget wide enough to fit seconds */
+/* Make time widget wide enough to fit seconds */
 #chat.show-seconds .time {
     width: 76px;
 }
 
-/* prevent chrome from underlining links */
+/* Prevent chrome from underlining links */
 a:-webkit-any-link {
     text-decoration: none;
 }
 
-/* make code boxes stand out less */
+/* Make code boxes stand out less */
 code{
     color: #fc1700;
     background-color: #b0adae;
@@ -453,12 +453,24 @@ kbd{
     color: #1e1e1e;
 }
 
-/* make prefetch errors readable */
+/* Make prefetch errors readable */
 #chat .toggle-content {
     color: #999;
 }
 
-/* ****** public css mods ****** */
+/* Make join-channel box align with network names */
+#sidebar .join-form .input {
+    margin-left: 5px;
+    width: 90%;
+}
+
+#sidebar .join-form .btn {
+    width: 90%;
+    margin-left: 5px;
+    /* margin: auto; */
+}
+
+/* ****** Public css mods ****** */
 /* Better CSS box */
 #user-specified-css-input {
     font-family: monospace;
@@ -499,7 +511,7 @@ kbd{
     /* margin-right: 5px; */
 }
 
-/*Thinner user sidebar*/
+/* Thinner user sidebar */
 #chat .sidebar {
     width: 150px
 }
@@ -510,12 +522,12 @@ kbd{
     }
 }
 
-/* hide wendy spam */
+/* Hide wendy spam */
 #chat .msg[data-from="Wendy"] div.preview  {
     display:none;
 }
 
-/*Thinner sidebar*/
+/* Thinner sidebar */
 #sidebar,
 #footer,
 .tse-scroll-content {
@@ -529,5 +541,5 @@ kbd{
 }
 
 #sidebar div.chan {
-    width: 140px /*Change this to roughly 20-30px less than the width*/
+    width: 140px /* Change this to roughly 20-30px less than the width */
 }
