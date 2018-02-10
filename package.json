@@ -1,6 +1,6 @@
 {
   "name": "thelounge-theme-mininapse",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "A dark, minimal theme for thelounge",
   "main": "package.json",
   "thelounge": {
