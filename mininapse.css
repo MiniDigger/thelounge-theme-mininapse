@@ -458,6 +458,11 @@ kbd{
     color: #999;
 }
 
+/* Make thumbnails align with text */
+#chat .toggle-thumbnail {
+    padding-left: 0px;
+}
+
 /* Make join-channel box align with network names */
 #sidebar .join-form .input {
     margin-left: 5px;
