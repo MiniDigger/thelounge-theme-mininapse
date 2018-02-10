@@ -475,6 +475,11 @@ kbd{
     /* margin: auto; */
 }
 
+/* With thinner channel sidebar, we need to have less padding to the left for buttons */
+#footer {
+    padding-left: 5px;
+}
+
 /* ****** Public css mods ****** */
 /* Better CSS box */
 #user-specified-css-input {
