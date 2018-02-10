@@ -458,6 +458,11 @@ kbd{
     color: #999;
 }
 
+/* Make thumbnails align with text */
+#chat .toggle-thumbnail {
+    padding-left: 0px;
+}
+
 /* ****** public css mods ****** */
 /* Better CSS box */
 #user-specified-css-input {
