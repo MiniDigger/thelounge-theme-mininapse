@@ -467,6 +467,7 @@ kbd{
 #sidebar .join-form .btn {
 	width: 90%;
 	margin-left: 5px;
+	/* margin: auto; */
 }
 
 /* ****** Public css mods ****** */
