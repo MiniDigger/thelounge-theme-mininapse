@@ -453,6 +453,11 @@ kbd{
     color: #1e1e1e;
 }
 
+/* make prefetch errors readable */
+#chat .toggle-content {
+    color: #999;
+}
+
 /* ****** public css mods ****** */
 /* Better CSS box */
 #user-specified-css-input {
@@ -491,7 +496,7 @@ kbd{
 
 #sidebar .badge, #sidebar .close {
     margin-left: 5px;
-    margin-right: 5px;  
+    /* margin-right: 5px; */
 }
 
 /*Thinner user sidebar*/
