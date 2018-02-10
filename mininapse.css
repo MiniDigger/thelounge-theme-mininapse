@@ -519,15 +519,15 @@ kbd{
 #sidebar,
 #footer,
 .tse-scroll-content {
-    width: 155px /*Change this to choose a width, change #main to the same*/
+    width: 160px /*Change this to choose a width, change #main to the same*/
 }
 
 @media (min-width: 768px){
     #main {
-        left: 155px;
+        left: 160px;
     }
 }
 
 #sidebar div.chan {
-    width: 130px /*Change this to roughly 20-30px less than the width*/
+    width: 140px /*Change this to roughly 20-30px less than the width*/
 }
