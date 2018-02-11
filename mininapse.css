@@ -423,7 +423,7 @@ body {
 }
 
 /* Fix date marker */
-#chat .date-marker-text::before{
+#chat .date-marker-text::before {
     color: #236b2b;
     background-color: #282525;
 }
@@ -443,12 +443,12 @@ a:-webkit-any-link {
 }
 
 /* Make code boxes stand out less */
-code{
-    color: #fc1700;
+code {
+    color: #1e1e1e;
     background-color: #b0adae;
 }
 
-kbd{
+kbd {
     background-color: #b0adae;
     color: #1e1e1e;
 }
