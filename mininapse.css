@@ -532,9 +532,30 @@ kbd {
     }
 }
 
-/* Hide wendy spam */
-#chat .msg[data-from="Wendy"] div.preview  {
-    display:none;
+/* Hide bot spam */
+#chat .msg[data-from="travis-ci"] .toggle-button,
+#chat .msg[data-from="MiniBot"] .toggle-button,
+#chat .msg[data-from="Wendy"] .toggle-button {
+	transform: rotate(90deg);
+}
+
+#chat .msg[data-from="travis-ci"] .toggle-button.opened,
+#chat .msg[data-from="MiniBot"] .toggle-button.opened,
+#chat .msg[data-from="Wendy"] .toggle-button.opened {
+	transform: rotate(0deg);
+}
+
+
+#chat .msg[data-from="travis-ci"] .toggle-content,
+#chat .msg[data-from="MiniBot"] .toggle-content,
+#chat .msg[data-from="Wendy"] .toggle-content {
+    display: inline-flex !important;
+}
+
+#chat .msg[data-from="travis-ci"] .toggle-content.show,
+#chat .msg[data-from="MiniBot"] .toggle-content.show,
+#chat .msg[data-from="Wendy"] .toggle-content.show {
+    display: none !important;
 }
 
 /* Thinner sidebar */
