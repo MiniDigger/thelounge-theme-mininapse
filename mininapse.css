@@ -512,6 +512,11 @@ kbd {
     }
 }
 
+/* Remove white vertical 1px border between nick and text */
+#chat .content {
+    border-left: none;
+}
+
 /* ****** Public css mods ****** */
 /* Better CSS box */
 #user-specified-css-input {
