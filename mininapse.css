@@ -472,7 +472,10 @@ kbd {
 #sidebar .join-form .btn {
     width: 95%;
     margin-left: 5px;
-    /* margin: auto; */
+}
+
+#sidebar .join-form{
+    padding: 0 18px 8px 0;
 }
 
 /* With thinner channel sidebar, we need to have less padding to the left for buttons */
