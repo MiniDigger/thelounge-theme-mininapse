@@ -517,6 +517,16 @@ kbd {
     border-left: none;
 }
 
+/* fix userlist display */
+#chat .userlist {
+    background: none; 
+    border-left: none;
+}
+
+#chat .userlist .count {
+    background: none;
+}
+
 /* ****** Public css mods ****** */
 /* Better CSS box */
 #user-specified-css-input {
