@@ -213,13 +213,8 @@ body {
 }
 
 #sidebar .chan:first-child {
-    color: #EF4657;
     padding-left: 5px;
     font-size: 1.1em;
-}
-
-#sidebar .chan:first-child:hover, #sidebar .chan:first-child.active {
-    color: #FF93A4;
 }
 
 #sidebar .chan.lobby:before, #chat .lobby .title:before {
@@ -524,6 +519,12 @@ kbd {
 
 #sidebar .network .collapse-network {
     padding-left: 0px;
+    width: auto;
+}
+
+#sidebar .lobby-wrap { 
+    display: flex; 
+    flex-grow: unset; 
 }
 
 /* ****** Public css mods ****** */
