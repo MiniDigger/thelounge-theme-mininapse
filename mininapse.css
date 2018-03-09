@@ -218,19 +218,6 @@ body {
     font-size: 1.1em;
 }
 
-#sidebar .chan:first-child::after {
-    content: ' ';
-    display: block;
-    height: 2px;
-    background-color: #EF4657;
-    width: 25px;
-    margin-top: 8px;
-}
-
-#sidebar .chan:first-child:hover::after, #sidebar .chan:first-child.active::after {
-    background-color: #FF93A4;
-}
-
 #sidebar .chan:first-child:hover, #sidebar .chan:first-child.active {
     color: #FF93A4;
 }
