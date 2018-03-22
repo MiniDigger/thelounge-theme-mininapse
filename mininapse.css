@@ -504,7 +504,7 @@ kbd {
 
 /* fix userlist display */
 #chat .userlist {
-    background: none; 
+    background: #282525; 
     border-left: none;
 }
 
@@ -525,6 +525,11 @@ kbd {
 #sidebar .lobby-wrap { 
     display: flex; 
     flex-grow: unset; 
+}
+
+/* fix sidebar color */
+#sidebar {
+    background: #282525;
 }
 
 /* ****** Public css mods ****** */
@@ -624,4 +629,10 @@ kbd {
 
 #sidebar div.chan {
     width: 140px /* Change this to roughly 20-30px less than the width */
+}
+
+#sidebar .chan .name {
+    width: 92px;
+    text-overflow: ellipsis;
+    margin-right: -6px;	
 }
