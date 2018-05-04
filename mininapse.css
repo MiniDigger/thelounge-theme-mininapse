@@ -191,7 +191,7 @@ body {
     color: #EF4657 !important;
 }
 
-#windows .header {
+#windows #chat .header {
     border: none;
 }
 
