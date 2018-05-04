@@ -532,6 +532,11 @@ kbd {
     background: #282525;
 }
 
+/* fix user list hover */
+#chat .userlist .user.active {
+    background-color: #505050;
+}
+
 /* ****** Public css mods ****** */
 /* Better CSS box */
 #user-specified-css-input {
