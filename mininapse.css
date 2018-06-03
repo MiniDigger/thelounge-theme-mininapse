@@ -131,7 +131,6 @@ body {
     font-weight: 600;
     padding-left: 12px;
     padding-right: 30px;
-    border-bottom: 0px; /* Removes white line below channel topic area */
 }
 
 #chat .time {
@@ -646,4 +645,9 @@ kbd {
 /* Remove green and yellow colour to illustrate if a network is secure or not. Red colour, yes please! */
 #sidebar .chan.lobby, #sidebar .chan.lobby.active, #sidebar .chan.lobby .lobby-wrap:hover, #sidebar .not-secure .chan.lobby, #sidebar .not-secure .chan.lobby.active, #sidebar .not-secure .chan.lobby .lobby-wrap:hover {
     color: #EF4657;
+}
+
+/* Remove white line below channel topic are */
+#windows #chat .header {
+    border-bottom: 0px;
 }
