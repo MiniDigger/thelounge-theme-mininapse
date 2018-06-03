@@ -638,7 +638,12 @@ kbd {
     margin-right: -6px;	
 }
 
-/* don't display join and insecure icons/tooltips on networks */
+/* Don't display join and insecure icons/tooltips on networks */
 .add-channel, .add-channel-tooltip, .not-secure-tooltip, .not-secure-icon {
   display:none;
+}
+
+/* Remove green and yellow colour to illustrate if a network is secure or not. Red colour, yes please! */
+#sidebar .chan.lobby, #sidebar .chan.lobby.active, #sidebar .chan.lobby .lobby-wrap:hover, #sidebar .not-secure .chan.lobby, #sidebar .not-secure .chan.lobby.active, #sidebar .not-secure .chan.lobby .lobby-wrap:hover {
+    color: #EF4657;
 }
