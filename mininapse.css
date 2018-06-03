@@ -131,6 +131,7 @@ body {
     font-weight: 600;
     padding-left: 12px;
     padding-right: 30px;
+    border-bottom: 0px; /* Removes white line below channel topic area */
 }
 
 #chat .time {
@@ -460,11 +461,6 @@ kbd {
     padding: 0 18px 8px 0;
 }
 
-/* With thinner channel sidebar, we need to have less padding to the left for buttons */
-#footer {
-    padding-left: 5px;
-}
-
 /* full line highlights */
 #chat .error .from {
 	color: #e74c3c;
@@ -640,4 +636,9 @@ kbd {
     width: 92px;
     text-overflow: ellipsis;
     margin-right: -6px;	
+}
+
+/* don't display join and insecure icons/tooltips on networks */
+.add-channel, .add-channel-tooltip, .not-secure-tooltip, .not-secure-icon {
+  display:none;
 }
