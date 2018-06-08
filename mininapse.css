@@ -646,8 +646,3 @@ kbd {
 #sidebar .chan.lobby, #sidebar .chan.lobby.active, #sidebar .chan.lobby .lobby-wrap:hover, #sidebar .not-secure .chan.lobby, #sidebar .not-secure .chan.lobby.active, #sidebar .not-secure .chan.lobby .lobby-wrap:hover {
     color: #EF4657;
 }
-
-/* Remove white line below channel topic are */
-#windows #chat .header {
-    border-bottom: 0px;
-}
