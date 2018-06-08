@@ -650,3 +650,8 @@ kbd {
 #sidebar .chan.lobby.active, #sidebar .chan.lobby .lobby-wrap:hover, #sidebar .not-secure .chan.lobby.active, #sidebar .not-secure .chan.lobby .lobby-wrap:hover {
     color: #f58383;
 }
+
+/* fix active channel growing in size, making your list jump around */
+#sidebar .chan.active{
+    height: 22px;
+}
