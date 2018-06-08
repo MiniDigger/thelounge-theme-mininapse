@@ -460,11 +460,6 @@ kbd {
     padding: 0 18px 8px 0;
 }
 
-/* With thinner channel sidebar, we need to have less padding to the left for buttons */
-#footer {
-    padding-left: 5px;
-}
-
 /* full line highlights */
 #chat .error .from {
 	color: #e74c3c;
@@ -640,4 +635,19 @@ kbd {
     width: 92px;
     text-overflow: ellipsis;
     margin-right: -6px;	
+}
+
+/* Don't display join and insecure icons/tooltips on networks */
+.add-channel, .add-channel-tooltip, .not-secure-tooltip, .not-secure-icon {
+  display:none;
+}
+
+/* Remove green and yellow colour to illustrate if a network is secure or not. Red colour, yes please! */
+#sidebar .chan.lobby, #sidebar .chan.lobby.active, #sidebar .chan.lobby .lobby-wrap:hover, #sidebar .not-secure .chan.lobby, #sidebar .not-secure .chan.lobby.active, #sidebar .not-secure .chan.lobby .lobby-wrap:hover {
+    color: #EF4657;
+}
+
+/* Remove white line below channel topic are */
+#windows #chat .header {
+    border-bottom: 0px;
 }
