@@ -643,6 +643,10 @@ kbd {
 }
 
 /* Remove green and yellow colour to illustrate if a network is secure or not. Red colour, yes please! */
-#sidebar .chan.lobby, #sidebar .chan.lobby.active, #sidebar .chan.lobby .lobby-wrap:hover, #sidebar .not-secure .chan.lobby, #sidebar .not-secure .chan.lobby.active, #sidebar .not-secure .chan.lobby .lobby-wrap:hover {
+#sidebar .chan.lobby, #sidebar .not-secure .chan.lobby {
     color: #EF4657;
+}
+
+#sidebar .chan.lobby.active, #sidebar .chan.lobby .lobby-wrap:hover, #sidebar .not-secure .chan.lobby.active, #sidebar .not-secure .chan.lobby .lobby-wrap:hover {
+    color: #f58383;
 }
