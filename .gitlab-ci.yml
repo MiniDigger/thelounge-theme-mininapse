@@ -15,17 +15,20 @@ test:
 promote-patch:
   script:
     - npm version patch  
-    - git push --follow-tags  
+    - git push --follow-tags    
+  when: manual
 
 promote-minor:
   script:
     - npm version minor  
     - git push --follow-tags  
+  when: manual  
     
 promote-major:
   script:
     - npm version major  
     - git push --follow-tags  
+  when: manual
 
 publish:  
   stage: deploy
