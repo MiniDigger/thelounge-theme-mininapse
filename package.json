@@ -24,10 +24,11 @@
     "url": "https://github.com/MiniDigger/thelounge-theme-mininapse/issues"
   },
   "devDependencies": {
-    "stylelint": "~9.2.0",
+    "stylelint": "~9.3.0",
     "stylelint-config-standard": "~18.2.0"
   },
   "scripts": {
-    "test": "stylelint mininapse.css"
+    "test": "stylelint mininapse.css",
+    "fixLint":  "stylelint mininapse.css --fix"
   }
 }

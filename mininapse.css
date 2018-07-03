@@ -1,4 +1,4 @@
-/* 
+/*
  * mininapse
  * lounge theme (fork fork) by MiniDigger
  * https://github.com/MiniDigger/thelounge-theme-mininapse
@@ -18,7 +18,9 @@
  */
 
 /* we comment out the following fonts line, and add our changes at the end of the file */
-/*@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,200,200italic,300italic,300,400italic,600,600italic,700italic,700,900,900italic|Source+Code+Pro:400,900,700,600,500,300,200);*/
+
+/* @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,200,200italic,300italic,300,400italic,600,600italic,700italic,700,900,900italic|Source+Code+Pro:400,900,700,600,500,300,200); */
+
 /* neuron base16 colors
  * BASE 00: #1C1919
  * BASE 01: #282525
@@ -37,6 +39,7 @@
  * BASE 0E: #AD5472
  * BASE 0F: #BD8D46
  */
+
 /* irc colors
  * 0, white: #F6F6F6
  * 1, black: #1C1919
@@ -57,8 +60,8 @@
  */
 body {
     background-color: #282525;
-    font-family: 'Source Sans Pro';
-    color: #C5C1C1;
+    font-family: Source Sans Pro, sans-serif;
+    color: #c5c1c1;
 }
 
 #main {
@@ -66,7 +69,6 @@ body {
     top: 0;
     right: 0;
     border-radius: 0;
-    /* background: #282525;*/
     background: red;
 }
 
@@ -88,7 +90,7 @@ body {
     border-radius: 0;
     background-color: transparent;
     border: none;
-    color: #F6F6F6;
+    color: #f6f6f6;
 }
 
 #form #input {
@@ -119,14 +121,15 @@ body {
 }
 
 #chat .search {
-    color: #EAE9E9;
+    color: #eae9e9;
 }
 
 #chat .search::-webkit-input-placeholder {
-    color: #C5C1C1;
+    color: #c5c1c1;
 }
 
-#chat, #windows .header {
+#chat,
+#windows .header {
     font-family: 'Source Code Pro', monospace;
     font-weight: 600;
     padding-left: 12px;
@@ -134,27 +137,27 @@ body {
 }
 
 #chat .time {
-    color: #403D3C;
+    color: #403d3c;
 }
 
 #chat .self .text {
-    color: #EAE9E9;
+    color: #eae9e9;
 }
 
 #chat .unread-marker::before {
-    border-top: 1px solid #EF4657;
+    border-top: 1px solid #ef4657;
 }
 
 #chat .unread-marker .unread-marker-text::before {
     text-transform: uppercase;
     font-family: 'Source Sans Pro', sans-serif;
-    color: #EF4657;
+    color: #ef4657;
     background-color: #282525;
 }
 
 #form #nick {
     background-color: transparent;
-    color: #8D8484;
+    color: #8d8484;
     height: 100%;
     margin: 0;
     margin-right: 10px;
@@ -163,7 +166,7 @@ body {
 }
 
 #chat a {
-    color: #1695A3;
+    color: #1695a3;
 }
 
 #chat .from {
@@ -179,37 +182,44 @@ body {
     background-color: transparent;
 }
 
-#chat .user-mode:before {
+#chat .user-mode::before {
     border: none;
 }
 
 #chat .notice .time {
-    color: #403D3C !important;
+    color: #403d3c !important;
 }
 
-#chat .notice .text, #chat .chan .notice .user {
-    color: #EF4657 !important;
+#chat .notice .text,
+#chat .chan .notice .user {
+    color: #ef4657 !important;
 }
 
 #windows #chat .header {
     border: none;
 }
 
-#windows .window:before, #windows .chan:before {
+#windows .window::before,
+#windows .chan::before {
     height: 0;
     border: none;
 }
 
-#windows .chan, #windows .window {
+#windows .chan,
+#windows .window {
     background-color: #282525;
 }
 
-#sidebar button:hover, #sidebar .chan:hover, #sidebar .chan.active {
-    color: #F6F6F6;
+#sidebar button:hover,
+#sidebar .chan:hover,
+#sidebar .chan.active {
+    color: #f6f6f6;
 }
 
-#sidebar button, #sidebar .chan, #sidebar .sign-out {
-    color: #8D8484;
+#sidebar button,
+#sidebar .chan,
+#sidebar .sign-out {
+    color: #8d8484;
 }
 
 #sidebar .chan:first-child {
@@ -217,11 +227,12 @@ body {
     font-size: 1.1em;
 }
 
-#sidebar .chan.lobby:before, #chat .lobby .title:before {
+#sidebar .chan.lobby::before,
+#chat .lobby .title::before {
     content: none;
 }
 
-#sidebar .chan .name:after {
+#sidebar .chan .name::after {
     background: none;
 }
 
@@ -229,72 +240,91 @@ body {
     display: none;
 }
 
-#chat.colored-nicks .user.color-1, #chat.colored-nicks .user.color-17 {
-    color: #EF4657;
+#chat.colored-nicks .user.color-1,
+#chat.colored-nicks .user.color-17 {
+    color: #ef4657;
 }
 
-#chat.colored-nicks .user.color-2, #chat.colored-nicks .user.color-18 {
-    color: #FF93A4;
+#chat.colored-nicks .user.color-2,
+#chat.colored-nicks .user.color-18 {
+    color: #ff93a4;
 }
 
-#chat.colored-nicks .user.color-3, #chat.colored-nicks .user.color-19 {
-    color: #FFB03B;
+#chat.colored-nicks .user.color-3,
+#chat.colored-nicks .user.color-19 {
+    color: #ffb03b;
 }
 
-#chat.colored-nicks .user.color-4, #chat.colored-nicks .user.color-20 {
-    color: #CC7D08;
+#chat.colored-nicks .user.color-4,
+#chat.colored-nicks .user.color-20 {
+    color: #cc7d08;
 }
 
-#chat.colored-nicks .user.color-5, #chat.colored-nicks .user.color-21 {
-    color: #FFD34E;
+#chat.colored-nicks .user.color-5,
+#chat.colored-nicks .user.color-21 {
+    color: #ffd34e;
 }
 
-#chat.colored-nicks .user.color-6, #chat.colored-nicks .user.color-22 {
-    color: #CCA01B;
+#chat.colored-nicks .user.color-6,
+#chat.colored-nicks .user.color-22 {
+    color: #cca01b;
 }
 
-#chat.colored-nicks .user.color-7, #chat.colored-nicks .user.color-23 {
-    color: #ACF046;
+#chat.colored-nicks .user.color-7,
+#chat.colored-nicks .user.color-23 {
+    color: #acf046;
 }
 
-#chat.colored-nicks .user.color-8, #chat.colored-nicks .user.color-24 {
-    color: #D5F572;
+#chat.colored-nicks .user.color-8,
+#chat.colored-nicks .user.color-24 {
+    color: #d5f572;
 }
 
-#chat.colored-nicks .user.color-9, #chat.colored-nicks .user.color-25 {
-    color: #499E8D;
+#chat.colored-nicks .user.color-9,
+#chat.colored-nicks .user.color-25 {
+    color: #499e8d;
 }
 
-#chat.colored-nicks .user.color-10, #chat.colored-nicks .user.color-26 {
-    color: #B5FFE1;
+#chat.colored-nicks .user.color-10,
+#chat.colored-nicks .user.color-26 {
+    color: #b5ffe1;
 }
 
-#chat.colored-nicks .user.color-11, #chat.colored-nicks .user.color-27 {
-    color: #35A7FF;
+#chat.colored-nicks .user.color-11,
+#chat.colored-nicks .user.color-27 {
+    color: #35a7ff;
 }
 
-#chat.colored-nicks .user.color-12, #chat.colored-nicks .user.color-28 {
-    color: #91A6FF;
+#chat.colored-nicks .user.color-12,
+#chat.colored-nicks .user.color-28 {
+    color: #91a6ff;
 }
 
-#chat.colored-nicks .user.color-13, #chat.colored-nicks .user.color-29 {
-    color: #8A46F0;
+#chat.colored-nicks .user.color-13,
+#chat.colored-nicks .user.color-29 {
+    color: #8a46f0;
 }
 
-#chat.colored-nicks .user.color-14, #chat.colored-nicks .user.color-30 {
-    color: #FF88DC;
+#chat.colored-nicks .user.color-14,
+#chat.colored-nicks .user.color-30 {
+    color: #ff88dc;
 }
 
-#chat.colored-nicks .user.color-15, #chat.colored-nicks .user.color-31 {
-    color: #BD8D46;
+#chat.colored-nicks .user.color-15,
+#chat.colored-nicks .user.color-31 {
+    color: #bd8d46;
 }
 
-#chat.colored-nicks .user.color-16, #chat.colored-nicks .user.color-32 {
-    color: #F0C079;
+#chat.colored-nicks .user.color-16,
+#chat.colored-nicks .user.color-32 {
+    color: #f0c079;
 }
 
 /* *** SYNAPSE CHANGES *** */
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:b,i,bi); body {
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:b,i,bi);
+
+body {
     font-family: "Open Sans", sans-serif;
 }
 
@@ -330,68 +360,75 @@ body {
 }
 
 /* ****** Changes made in Mininapse fork ******* */
+
 #chat .toggle-content.toggle-type-link a::after {
     background: none !important;
+
     /* no gradient on link preview */
 }
 
 #chat .toggle-content {
     background: none !important;
+
     /* No white image preview */
 }
 
+/* Text in white for image preview */
 #chat .toggle-content a {
-    color: #EAE9E9;
-    ; /* Text in white for image preview */
+    color: #eae9e9;
 }
 
+/* Make chat time readable */
 #chat .time {
-    color: #7D7A79;
-    /* Make chat time readable */
+    color: #7d7a79;
 }
 
 /* Fix user search bar placeholder */
+
+/* WebKit, Blink, Edge */
 ::-webkit-input-placeholder {
-    /* WebKit, Blink, Edge */
     color: #999;
 }
 
+/* Mozilla Firefox 4 to 18 */
 :-moz-placeholder {
-    /* Mozilla Firefox 4 to 18 */
     color: #999;
     opacity: 1;
 }
 
+/* Mozilla Firefox 19+ */
 ::-moz-placeholder {
-    /* Mozilla Firefox 19+ */
     color: #999;
     opacity: 1;
 }
 
+/* Internet Explorer 10-11 */
 :-ms-input-placeholder {
-    /* Internet Explorer 10-11 */
     color: #999;
-    ; }
+}
 
 /* Url readable */
 .irc-fg2 {
     color: #036cd8;
 }
 
-#chat .from:after {
+/* No gradient after username */
+#chat .from::after {
     background: none;
-    /* No gradient after username */
 }
 
 /* Previews */
-#chat .toggle-content .thumb, #chat .toggle-content img {
+
+#chat .toggle-content .thumb,
+#chat .toggle-content img {
     max-width: 300px;
     max-height: 150px;
     margin-top: -20px;
     margin-bottom: -20px;
 }
 
-#chat .toggle-content .body, #chat .toggle-content .head {
+#chat .toggle-content .body,
+#chat .toggle-content .head {
     white-space: normal;
 }
 
@@ -442,7 +479,7 @@ kbd {
 
 /* Make thumbnails align with text */
 #chat .toggle-thumbnail {
-    padding-left: 0px;
+    padding-left: 0;
 }
 
 /* Make join-channel box align with network names */
@@ -456,38 +493,38 @@ kbd {
     margin-left: 5px;
 }
 
-#sidebar .join-form{
+#sidebar .join-form {
     padding: 0 18px 8px 0;
 }
 
 /* full line highlights */
 #chat .error .from {
-	color: #e74c3c;
+    color: #e74c3c;
 }
 
-#chat .channel .highlight .text{
-    color: #C5C1C1;
+#chat .channel .highlight .text {
+    color: #c5c1c1;
 }
 
 #chat .channel .message.highlight {
-	background-color: rgba(231, 76, 60, 0.5);
+    background-color: rgba(231, 76, 60, 0.5);
 }
 
 #chat .channel .message.highlight .from::after {
-	background: transparent;
+    background: transparent;
 }
 
 @media (max-width: 479px) {
     #chat .channel .message.highlight {
         margin-left: -10px;
-		margin-right: -10px;
-		padding-left: 10px;
+        margin-right: -10px;
+        padding-left: 10px;
         padding-right: 10px;
-	}
-    
-    #chat .channel .message.highlight .from{
+    }
+
+    #chat .channel .message.highlight .from {
         border: 0;
- 		display: inline;
+        display: inline;
         padding: 0;
     }
 }
@@ -499,7 +536,7 @@ kbd {
 
 /* fix userlist display */
 #chat .userlist {
-    background: #282525; 
+    background: #282525;
     border-left: none;
 }
 
@@ -513,13 +550,13 @@ kbd {
 }
 
 #sidebar .network .collapse-network {
-    padding-left: 0px;
+    padding-left: 0;
     width: auto;
 }
 
-#sidebar .lobby-wrap { 
-    display: flex; 
-    flex-grow: unset; 
+#sidebar .lobby-wrap {
+    display: flex;
+    flex-grow: unset;
 }
 
 /* fix sidebar color */
@@ -533,6 +570,7 @@ kbd {
 }
 
 /* ****** Public css mods ****** */
+
 /* Better CSS box */
 #user-specified-css-input {
     font-family: monospace;
@@ -554,7 +592,7 @@ kbd {
     width: auto;
 }
 
-#sidebar .chan:before {
+#sidebar .chan::before {
     display: none;
 }
 
@@ -568,37 +606,37 @@ kbd {
     right: -5px;
 }
 
-#sidebar .badge, #sidebar .close {
+#sidebar .badge,
+#sidebar .close {
     margin-left: 5px;
-    /* margin-right: 5px; */
 }
 
 /* Thinner user sidebar */
 #chat .sidebar {
-    width: 150px
+    width: 150px;
 }
 
-@media (min-width: 768px){
+@media (min-width: 768px) {
     #chat .channel .chat {
         right: 150px;
     }
 }
 
 /* Hide bot spam */
+
 #chat .msg[data-from="travis-ci"] .toggle-button,
 #chat .msg[data-from="MiniBot"] .toggle-button,
 #chat .msg[data-from="Wendy"] .toggle-button,
 #chat .msg[data-from="github-status"] .toggle-button {
-	transform: rotate(90deg);
+    transform: rotate(90deg);
 }
 
 #chat .msg[data-from="travis-ci"] .toggle-button.opened,
 #chat .msg[data-from="MiniBot"] .toggle-button.opened,
 #chat .msg[data-from="Wendy"] .toggle-button.opened,
 #chat .msg[data-from="github-status"] .toggle-button.opened {
-	transform: rotate(0deg);
+    transform: rotate(0deg);
 }
-
 
 #chat .msg[data-from="travis-ci"] .toggle-content,
 #chat .msg[data-from="MiniBot"] .toggle-content,
@@ -618,65 +656,72 @@ kbd {
 #sidebar,
 #footer,
 .tse-scroll-content {
-    width: 160px /*Change this to choose a width, change #main to the same*/
+    width: 160px;
 }
 
-@media (min-width: 768px){
+@media (min-width: 768px) {
     #main {
         left: 160px;
     }
 }
 
 #sidebar div.chan {
-    width: 140px /* Change this to roughly 20-30px less than the width */
+    width: 140px;
 }
 
 #sidebar .chan .name {
     width: 92px;
     text-overflow: ellipsis;
-    margin-right: -6px;	
+    margin-right: -6px;
 }
 
 /* Don't display join and insecure icons/tooltips on networks */
-.add-channel, .add-channel-tooltip, .not-secure-tooltip, .not-secure-icon {
-  display:none;
+.add-channel,
+.add-channel-tooltip,
+.not-secure-tooltip,
+.not-secure-icon {
+    display: none;
 }
 
-/* Remove green and yellow colour to illustrate if a network is secure or not. Red colour, yes please! */
-#sidebar .chan.lobby, #sidebar .not-secure .chan.lobby {
-    color: #EF4657;
+/* Remove green and yellow color to illustrate if a network is secure or not. Red color, yes please! */
+#sidebar .chan.lobby,
+#sidebar .not-secure .chan.lobby {
+    color: #ef4657;
 }
 
-#sidebar .chan.lobby.active, #sidebar .chan.lobby .lobby-wrap:hover, #sidebar .not-secure .chan.lobby.active, #sidebar .not-secure .chan.lobby .lobby-wrap:hover {
+#sidebar .chan.lobby.active,
+#sidebar .chan.lobby .lobby-wrap:hover,
+#sidebar .not-secure .chan.lobby.active,
+#sidebar .not-secure .chan.lobby .lobby-wrap:hover {
     color: #f58383;
 }
 
 /* fix active channel growing in size, making your list jump around */
-#sidebar .chan.active{
+#sidebar .chan.active {
     height: 22px;
 }
 
 /* remove logo in sidebar */
 #sidebar .logo-container {
-    display: none;	
+    display: none;
 }
 
 /* remove white border on highlights */
-#chat .channel .message.highlight .content{
+#chat .channel .message.highlight .content {
     border-left: none;
 }
 
 /* revert hover color */
-#sidebar .chan:hover, 
+#sidebar .chan:hover,
 #footer button:hover,
-#sidebar .active, 
+#sidebar .active,
 #sidebar .active:hover {
     background-color: initial;
 }
 
 /* change icon colors back */
-#viewport .lt, 
-#viewport .rt, 
+#viewport .lt,
+#viewport .rt,
 #chat button.menu,
 #form #submit {
     color: rgb(197, 193, 193);
