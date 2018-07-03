@@ -49,6 +49,6 @@ promote-major:
 publish:  
   stage: deploy
   script:   
+    - git checkout HEAD
     - echo '//registry.npmjs.org/:_authToken=${NPM_TOKEN}'>.npmrc
     - npm publish
-  when: manual
