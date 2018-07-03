@@ -1,6 +1,6 @@
 {
   "name": "thelounge-theme-mininapse",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "description": "A dark, minimal theme for thelounge",
   "main": "package.json",
   "thelounge": {
@@ -29,6 +29,6 @@
   },
   "scripts": {
     "test": "stylelint mininapse.css",
-    "fixLint":  "stylelint mininapse.css --fix"
+    "fixLint": "stylelint mininapse.css --fix"
   }
 }
