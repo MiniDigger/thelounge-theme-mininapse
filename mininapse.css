@@ -673,3 +673,11 @@ kbd {
 #sidebar .active:hover {
     background-color: initial;
 }
+
+/* change icon colors back */
+#viewport .lt, 
+#viewport .rt, 
+#chat button.menu,
+#form #submit {
+    color: rgb(197, 193, 193);
+}
