@@ -46,7 +46,7 @@ promote-major:
 publish:  
   stage: deploy
   script:  
-    - git push  --follow-tags origin HEAD:master  
+    - git push  --follow-tags https://${GITLAB_USER}:${GITLAB_TOKEN}@git.minidigger.me/MiniDigger/thelounge-theme-mininapse.git/ HEAD:master  
     - echo '//registry.npmjs.org/:_authToken=${NPM_TOKEN}'>.npmrc
     - npm publish
   when: manual
