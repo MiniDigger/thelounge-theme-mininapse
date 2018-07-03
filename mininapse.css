@@ -660,3 +660,8 @@ kbd {
 #sidebar .logo-container {
     display: none;	
 }
+
+/* remove white border on highlights */
+#chat .channel .message.highlight .content{
+    border-left: none;
+}
