@@ -1,0 +1,38 @@
+image: node:8
+
+before_script:  
+  - npm install
+
+cache:  
+  paths:
+    - node_modules/
+    
+test:
+  stage: test
+  script:
+    - npm test
+
+promote-patch:
+  script:
+    - npm version patch  
+    - git push --follow-tags  
+
+promote-minor:
+  script:
+    - npm version minor  
+    - git push --follow-tags  
+    
+promote-major:
+  script:
+    - npm version major  
+    - git push --follow-tags  
+
+publish:  
+  stage: deploy
+  only:
+    - tags
+    - triggers
+  script:
+    - npm run build
+    - echo '//registry.npmjs.org/:_authToken=${NPM_TOKEN}'>.npmrc
+    - npm publish
