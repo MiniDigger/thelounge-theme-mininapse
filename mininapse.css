@@ -665,3 +665,11 @@ kbd {
 #chat .channel .message.highlight .content{
     border-left: none;
 }
+
+/* revert hover color */
+#sidebar .chan:hover, 
+#footer button:hover,
+#sidebar .active, 
+#sidebar .active:hover {
+    background-color: initial;
+}
