@@ -655,3 +655,8 @@ kbd {
 #sidebar .chan.active{
     height: 22px;
 }
+
+/* remove logo in sidebar */
+#sidebar .logo-container {
+    display: none;	
+}
