@@ -29,24 +29,26 @@ promote-patch:
   stage: promote
   script:
     - npm version patch
+    - git push  --follow-tags https://${GITLAB_USER}:${GITLAB_TOKEN}@git.minidigger.me/MiniDigger/thelounge-theme-mininapse.git/ HEAD:master 
   when: manual
 
 promote-minor:
   stage: promote
   script:
     - npm version minor 
+    - git push  --follow-tags https://${GITLAB_USER}:${GITLAB_TOKEN}@git.minidigger.me/MiniDigger/thelounge-theme-mininapse.git/ HEAD:master 
   when: manual  
     
 promote-major:
   stage: promote
   script:
     - npm version major
+    - git push  --follow-tags https://${GITLAB_USER}:${GITLAB_TOKEN}@git.minidigger.me/MiniDigger/thelounge-theme-mininapse.git/ HEAD:master 
   when: manual
 
 publish:  
   stage: deploy
-  script:  
-    - git push  --follow-tags https://${GITLAB_USER}:${GITLAB_TOKEN}@git.minidigger.me/MiniDigger/thelounge-theme-mininapse.git/ HEAD:master  
+  script:   
     - echo '//registry.npmjs.org/:_authToken=${NPM_TOKEN}'>.npmrc
     - npm publish
   when: manual
