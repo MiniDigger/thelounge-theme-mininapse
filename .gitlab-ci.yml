@@ -1,8 +1,15 @@
 image: node:8
 
+stages:
+  - build
+  - test
+  - promote
+  - deploy
+
 before_script:  
   - git config --global user.email "gitlab-ci@minidigger.me"
   - git config --global user.name "Gitlab-CI@MiniDigger"
+  - git config --global push.default simple
 
 cache:  
   paths:
@@ -19,32 +26,27 @@ test:
     - npm test
 
 promote-patch:
-  stage: deploy
+  stage: promote
   script:
-    - npm version patch  
-    - git push --follow-tags    
+    - npm version patch
   when: manual
 
 promote-minor:
-  stage: deploy
+  stage: promote
   script:
-    - npm version minor  
-    - git push --follow-tags  
+    - npm version minor 
   when: manual  
     
 promote-major:
-  stage: deploy
+  stage: promote
   script:
-    - npm version major  
-    - git push --follow-tags  
+    - npm version major
   when: manual
 
 publish:  
   stage: deploy
-  only:
-    - tags
-    - triggers
-  script:
-    - npm run build
+  script:  
+    - git push  --follow-tags origin HEAD:master  
     - echo '//registry.npmjs.org/:_authToken=${NPM_TOKEN}'>.npmrc
     - npm publish
+  when: manual
