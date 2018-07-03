@@ -1,6 +1,6 @@
 image: node:8
 
-before-script:
+before_script:  
   - git config --global user.email "gitlab-ci@minidigger.me"
   - git config --global user.name "Gitlab-CI@MiniDigger"
 
