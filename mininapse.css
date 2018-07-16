@@ -726,3 +726,6 @@ kbd {
 #form #submit {
     color: rgb(197, 193, 193);
 }
+
+/* Monospace font for server MOTD, since ASCII require this */
+.msg.motd {font-family: Monospace;}
