@@ -728,4 +728,6 @@ kbd {
 }
 
 /* Monospace font for server MOTD, since ASCII require this */
-.msg.motd {font-family: Monospace;}
+.msg.motd {
+    font-family: Monospace;
+}
