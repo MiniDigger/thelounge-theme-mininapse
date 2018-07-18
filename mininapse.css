@@ -12,17 +12,17 @@ Authors:
 @import 'default.css';
 
 :root {
-	--body-color: #c5c1c1;
-	--dim-color: #999;
-	--link-color: #ef4657;
-	--window-bg-color: #282525;
-	--body-bg-color: #282525;
-	--active-bg-color: #333030;
-	--dark-bg-color: #0003;
-	--date-marker-color: #84ce88;
-	--unread-marker-color: #84ce88;
-	--highlight-bg-color: #f58383;
-	--highlight-border-color: #ef4657;
+    --body-color: #c5c1c1;
+    --dim-color: #999;
+    --link-color: #ef4657;
+    --window-bg-color: #282525;
+    --body-bg-color: #282525;
+    --active-bg-color: #333030;
+    --dark-bg-color: #0003;
+    --date-marker-color: #84ce88;
+    --unread-marker-color: #84ce88;
+    --highlight-bg-color: #f58383;
+    --highlight-border-color: #ef4657;
 }
 
 /* Borders */
@@ -30,7 +30,7 @@ Authors:
 #windows #chat .header,
 #chat .user-mode::before,
 #chat .userlist {
-	border-color: var(--window-bg-color);
+    border-color: var(--window-bg-color);
 }
 
 /* Button colors */
@@ -41,7 +41,7 @@ Authors:
 #sidebar button,
 #form #submit,
 #footer button {
-	color: var(--link-color);
+    color: var(--link-color);
 }
 
 #viewport .lt:hover,
@@ -49,7 +49,7 @@ Authors:
 #chat button.menu:hover,
 #sidebar button:hover,
 #form #submit:hover {
-	color: var(--highlight-bg-color);
+    color: var(--highlight-bg-color);
 }
 
 /* Active/hover */
@@ -63,39 +63,39 @@ Authors:
 #sidebar .active:hover,
 #sidebar .chan:hover,
 #footer button:hover {
-	background-color: var(--active-bg-color);
+    background-color: var(--active-bg-color);
 }
 
 /* Network-/channel list sidebar */
 #sidebar .chan,
 #sidebar .empty {
-	color: var(--body-color);
+    color: var(--body-color);
 }
 
 #sidebar,
 #footer,
 .tse-scroll-content {
-	width: 170px;
+    width: 170px;
 }
 
 #sidebar .chan,
 #sidebar .chan-placeholder {
-	padding-bottom: 3px;
-	padding-top: 3px;
+    padding-bottom: 3px;
+    padding-top: 3px;
 }
 
 #sidebar .network,
 #sidebar .network-placeholder {
-	margin-bottom: 3px;
+    margin-bottom: 3px;
 }
 
 #sidebar .network .collapse-network-icon::before {
-	color: var(--highlight-border-color);
+    color: var(--highlight-border-color);
 }
 
 #sidebar .network .collapse-network {
-	width: 35px;
-	opacity: 100;
+    width: 35px;
+    opacity: 100;
 }
 
 #sidebar .logo,
@@ -106,33 +106,33 @@ Authors:
 #sidebar .chan.channel .close,
 .not-secure-tooltip,
 .not-secure-icon {
-	display: none;
+    display: none;
 }
 
 #sidebar .chan.lobby,
 #sidebar .not-secure .chan.lobby {
-	color: var(--highlight-border-color);
+    color: var(--highlight-border-color);
 }
 
 #sidebar .chan.lobby.active,
 #sidebar .chan.lobby .lobby-wrap:hover,
 #sidebar .not-secure .chan.lobby.active,
 #sidebar .not-secure .chan.lobby .lobby-wrap:hover {
-	color: var(--highlight-bg-color);
+    color: var(--highlight-bg-color);
 }
 
 /* Nick list sidebar */
 #chat .user-mode::before {
-	padding: 12px 16px 0;
-	margin-bottom: 0;
+    padding: 12px 16px 0;
+    margin-bottom: 0;
 }
 
 #chat .userlist .count {
-	background: var(--body-bg-color);
+    background: var(--body-bg-color);
 }
 
 #chat .names .user:hover {
-	opacity: 0.6;
+    opacity: 0.6;
 }
 
 /* Inputs */
@@ -141,102 +141,102 @@ Authors:
 input,
 #form,
 #chat .userlist .search {
-	color: var(--body-color);
-	background-color: var(--window-bg-color);
-	border-color: var(--dim-color) !important;
+    color: var(--body-color);
+    background-color: var(--window-bg-color);
+    border-color: var(--dim-color) !important;
 }
 
 .input::placeholder,
 input::placeholder,
 textarea::placeholder,
 #chat .userlist .search::placeholder {
-	color: var(--dim-color);
+    color: var(--dim-color);
 }
 
 #form {
-	border: none;
+    border: none;
 }
 
 #user-specified-css-input {
-	height: 400px;
+    height: 400px;
 }
 
 .password-container .reveal-password span,
 #settings .extra-help,
 #settings .extra-experimental {
-	color: var(--highlight-border-color);
+    color: var(--highlight-border-color);
 }
 
 /* Windows */
 #windows .window {
-	box-shadow: none;
+    box-shadow: none;
 }
 
 #windows .window h2 {
-	color: var(--body-color);
+    color: var(--body-color);
 }
 
 /* Content menu */
 .context-menu-item,
 .textcomplete-item,
 .textcomplete-item a {
-	color: var(--body-color);
+    color: var(--body-color);
 }
 
 .textcomplete-menu,
 #context-menu {
-	background-color: var(--body-bg-color);
+    background-color: var(--body-bg-color);
 }
 
 .context-menu-item::before,
 .textcomplete-item::before {
-	color: var(--link-color);
+    color: var(--link-color);
 }
 
 /* Channels */
 #chat .channel .message.highlight {
-	background: var(--body-bg-color);
-	border-left: 5px solid var(--highlight-border-color);
+    background: var(--body-bg-color);
+    border-left: 5px solid var(--highlight-border-color);
 }
 
 #chat .channel .message.highlight .content {
-	border-left: none;
+    border-left: none;
 }
 
 #chat .self {
-	background: linear-gradient(to right, var(--date-marker-color) 5px, var(--body-bg-color) 5px);
+    background: linear-gradient(to right, var(--date-marker-color) 5px, var(--body-bg-color) 5px);
 }
 
 #chat .self .text {
-	color: var(--body-color);
+    color: var(--body-color);
 }
 
 #chat .chan .notice .user,
 #chat .notice .text,
 #chat .notice .time,
 .irc-fg2 {
-	color: var(--link-color) !important;
+    color: var(--link-color) !important;
 }
 
 #chat .toggle-content {
-	background: var(--body-bg-color);
+    background: var(--body-bg-color);
 }
 
 #chat .toggle-text a {
-	color: var(--body-color);
+    color: var(--body-color);
 }
 
 #windows .header .topic {
-	color: var(--body-color);
+    color: var(--body-color);
 }
 
 /* MOTD */
 #chat .motd .from::before {
-	color: var(--highlight-border-color);
+    color: var(--highlight-border-color);
 }
 
 #chat .msg.motd .text {
-	background-color: var(--dark-bg-color);
+    background-color: var(--dark-bg-color);
 }
 
 /* <editor-fold desc="hide bot spam"> */
@@ -244,28 +244,28 @@ textarea::placeholder,
 #chat .msg[data-from="MiniBot"] .toggle-button,
 #chat .msg[data-from="Wendy"] .toggle-button,
 #chat .msg[data-from="github-status"] .toggle-button {
-	transform: rotate(90deg);
+    transform: rotate(90deg);
 }
 
 #chat .msg[data-from="travis-ci"] .toggle-button.opened,
 #chat .msg[data-from="MiniBot"] .toggle-button.opened,
 #chat .msg[data-from="Wendy"] .toggle-button.opened,
 #chat .msg[data-from="github-status"] .toggle-button.opened {
-	transform: rotate(0deg);
+    transform: rotate(0deg);
 }
 
 #chat .msg[data-from="travis-ci"] .toggle-content,
 #chat .msg[data-from="MiniBot"] .toggle-content,
 #chat .msg[data-from="Wendy"] .toggle-content,
 #chat .msg[data-from="github-status"] .toggle-content {
-	display: inline-flex !important;
+    display: inline-flex !important;
 }
 
 #chat .msg[data-from="travis-ci"] .toggle-content.show,
 #chat .msg[data-from="MiniBot"] .toggle-content.show,
 #chat .msg[data-from="Wendy"] .toggle-content.show,
 #chat .msg[data-from="github-status"] .toggle-content.show {
-	display: none !important;
+    display: none !important;
 }
 
 /* </editor-fold> */
@@ -273,82 +273,82 @@ textarea::placeholder,
 /* <editor-fold desc="nick colors"> */
 #chat.colored-nicks .user.color-1,
 #chat.colored-nicks .user.color-17 {
-	color: #ef4657;
+    color: #ef4657;
 }
 
 #chat.colored-nicks .user.color-2,
 #chat.colored-nicks .user.color-18 {
-	color: #ff93a4;
+    color: #ff93a4;
 }
 
 #chat.colored-nicks .user.color-3,
 #chat.colored-nicks .user.color-19 {
-	color: #ffb03b;
+    color: #ffb03b;
 }
 
 #chat.colored-nicks .user.color-4,
 #chat.colored-nicks .user.color-20 {
-	color: #cc7d08;
+    color: #cc7d08;
 }
 
 #chat.colored-nicks .user.color-5,
 #chat.colored-nicks .user.color-21 {
-	color: #ffd34e;
+    color: #ffd34e;
 }
 
 #chat.colored-nicks .user.color-6,
 #chat.colored-nicks .user.color-22 {
-	color: #cca01b;
+    color: #cca01b;
 }
 
 #chat.colored-nicks .user.color-7,
 #chat.colored-nicks .user.color-23 {
-	color: #acf046;
+    color: #acf046;
 }
 
 #chat.colored-nicks .user.color-8,
 #chat.colored-nicks .user.color-24 {
-	color: #d5f572;
+    color: #d5f572;
 }
 
 #chat.colored-nicks .user.color-9,
 #chat.colored-nicks .user.color-25 {
-	color: #499e8d;
+    color: #499e8d;
 }
 
 #chat.colored-nicks .user.color-10,
 #chat.colored-nicks .user.color-26 {
-	color: #b5ffe1;
+    color: #b5ffe1;
 }
 
 #chat.colored-nicks .user.color-11,
 #chat.colored-nicks .user.color-27 {
-	color: #35a7ff;
+    color: #35a7ff;
 }
 
 #chat.colored-nicks .user.color-12,
 #chat.colored-nicks .user.color-28 {
-	color: #91a6ff;
+    color: #91a6ff;
 }
 
 #chat.colored-nicks .user.color-13,
 #chat.colored-nicks .user.color-29 {
-	color: #8a46f0;
+    color: #8a46f0;
 }
 
 #chat.colored-nicks .user.color-14,
 #chat.colored-nicks .user.color-30 {
-	color: #ff88dc;
+    color: #ff88dc;
 }
 
 #chat.colored-nicks .user.color-15,
 #chat.colored-nicks .user.color-31 {
-	color: #bd8d46;
+    color: #bd8d46;
 }
 
 #chat.colored-nicks .user.color-16,
 #chat.colored-nicks .user.color-32 {
-	color: #f0c079;
+    color: #f0c079;
 }
 
 /* </editor-fold> */
