@@ -1,5 +1,5 @@
 # thelounge-theme-mininapse
-a dark, minimal theme for the irc client thelounge ~ fork of a fork of a fork 
+a dark, minimal theme for the irc client thelounge
 
 ## Screenshots
 
