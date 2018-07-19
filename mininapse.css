@@ -235,7 +235,7 @@ Authors:
     color: var(--highlight-bg-color);
 }
 
-/* Nick list sidebar */
+/* User list sidebar */
 #chat .user-mode::before {
     padding: 12px 16px 0;
     margin-bottom: 0;
@@ -353,7 +353,7 @@ textarea::placeholder,
     background-color: var(--dark-bg-color);
 }
 
-/* scroll down */
+/* Scroll down button */
 .scroll-down-arrow {
     border-color: var(--highlight-border-color);
     background-color: var(--highlight-bg-color);
@@ -367,6 +367,11 @@ textarea::placeholder,
 .scroll-down-number {
     background-color: var(--highlight-border-color);
     color: white;
+}
+
+/* Channel list */
+#chat table.channel-list td {
+    color: var(--body-color);
 }
 
 /* 3.0.0-pre.7 fix */
