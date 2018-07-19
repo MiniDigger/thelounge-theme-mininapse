@@ -368,3 +368,9 @@ textarea::placeholder,
     background-color: var(--highlight-border-color);
     color: white;
 }
+
+/* 3.0.0-pre.7 fix */
+#windows #form .input {
+    background: var(--body-bg-color);
+    border-top: var(--body-bg-color);
+}
