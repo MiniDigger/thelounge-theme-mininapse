@@ -215,9 +215,6 @@ Authors:
 #sidebar .logo,
 #sidebar .logo-inverted,
 #sidebar .chan::before,
-.add-channel,
-.add-channel-tooltip,
-#sidebar .chan.channel .close,
 .not-secure-tooltip,
 .not-secure-icon {
     display: none;
