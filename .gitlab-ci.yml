@@ -20,10 +20,10 @@ build:
   script:
     - npm install
 
-test:
-  stage: test
-  script:
-    - npm test
+#test:
+#  stage: test
+#  script:
+#    - npm test
 
 promote-patch:
   stage: promote
