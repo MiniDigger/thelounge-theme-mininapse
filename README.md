@@ -1,4 +1,4 @@
-# thelounge-theme-mininapse
+# thelounge-theme-mininapse [![pipeline status](https://gitlab.com/MiniDigger/thelounge-theme-mininapse/badges/master/pipeline.svg)](https://gitlab.com/MiniDigger/thelounge-theme-mininapse/commits/master)
 a dark, minimal theme for the irc client thelounge
 
 ## Screenshots
