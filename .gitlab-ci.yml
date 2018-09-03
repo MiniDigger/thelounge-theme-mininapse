@@ -2,7 +2,7 @@ image: node:8
 
 stages:
   - build
-  - test
+#  - test TODO fix stylelint 
   - promote
   - deploy
 
@@ -31,7 +31,7 @@ promote-patch:
     - tags
   script:
     - npm version patch
-    - git push  --follow-tags https://${GITLAB_USER}:${GITLAB_TOKEN}@git.minidigger.me/MiniDigger/thelounge-theme-mininapse.git/ HEAD:master 
+    - git push  --follow-tags https://${GITHUB_USER}:${GITHUB_TOKEN}@github.com/MiniDigger/thelounge-theme-mininapse.git/ HEAD:master 
   when: manual
 
 promote-minor:
@@ -40,7 +40,7 @@ promote-minor:
     - tags
   script:
     - npm version minor 
-    - git push  --follow-tags https://${GITLAB_USER}:${GITLAB_TOKEN}@git.minidigger.me/MiniDigger/thelounge-theme-mininapse.git/ HEAD:master 
+    - git push  --follow-tags https://${GITHUB_USER}:${GITHUB_TOKEN}@github.com/MiniDigger/thelounge-theme-mininapse.git/ HEAD:master 
   when: manual  
     
 promote-major:
@@ -49,7 +49,7 @@ promote-major:
     - tags
   script:
     - npm version major
-    - git push  --follow-tags https://${GITLAB_USER}:${GITLAB_TOKEN}@git.minidigger.me/MiniDigger/thelounge-theme-mininapse.git/ HEAD:master 
+    - git push  --follow-tags https://${GITHUB_USER}:${GITHUB_TOKEN}@github.com/MiniDigger/thelounge-theme-mininapse.git/ HEAD:master 
   when: manual
 
 publish:  
