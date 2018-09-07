@@ -374,6 +374,11 @@ textarea::placeholder,
     color: var(--body-color);
 }
 
+/* Upload button */
+#form #submit, #form #upload {
+    color: var(--highlight-border-color);
+}
+
 /* 3.0.0-pre.7 fix */
 #windows #form .input {
     background: var(--body-bg-color);
