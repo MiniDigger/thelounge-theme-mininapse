@@ -322,6 +322,11 @@ textarea::placeholder,
     color: var(--body-color);
 }
 
+.irc-monospace, code {
+	color: var(--body-bg-color);
+	font-weight: bold;
+}
+
 #chat .chan .notice .user,
 #chat .notice .text,
 #chat .notice .time,
