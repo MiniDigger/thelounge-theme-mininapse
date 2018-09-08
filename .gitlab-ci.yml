@@ -10,9 +10,6 @@ before_script:
   - git config --global user.email "gitlab-ci@minidigger.me"
   - git config --global user.name "Gitlab-CI@MiniDigger"
   - git config --global push.default simple
-  - echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}">~/.npmrc
-  - cat ~/.npmrc
-  - npm whoami
 
 cache:  
   paths:
@@ -61,5 +58,8 @@ publish:
     - tags
   script:   
     - git checkout HEAD
+    - rm ~/.npmrc
     - echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}">~/.npmrc
+    - cat ~/.npmrc
+    - npm whoami
     - npm publish
