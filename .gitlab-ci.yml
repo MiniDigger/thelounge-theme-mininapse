@@ -60,6 +60,5 @@ publish:
     - git checkout HEAD
     - rm ~/.npmrc || true
     - echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}">~/.npmrc
-    - cat ~/.npmrc
     - npm whoami
     - npm publish
