@@ -152,7 +152,6 @@ Authors:
 #viewport .rt,
 #chat button.menu,
 #chat .count::before,
-#sidebar button,
 #form #submit,
 #footer button {
     color: var(--link-color);
@@ -161,7 +160,6 @@ Authors:
 #viewport .lt:hover,
 #viewport .rt:hover,
 #chat button.menu:hover,
-#sidebar button:hover,
 #form #submit:hover {
     color: var(--highlight-bg-color);
 }
