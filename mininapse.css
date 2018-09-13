@@ -375,9 +375,13 @@ textarea::placeholder,
     color: var(--body-color);
 }
 
-/* Upload button */
+/* Fileuploading */
 #form #submit, #form #upload {
     color: var(--highlight-border-color);
+}
+
+#upload-progressbar {
+    background: var(--highlight-border-color);
 }
 
 /* 3.0.0-pre.7 fix */
