@@ -317,20 +317,22 @@ textarea::placeholder,
     background: linear-gradient(to right, var(--date-marker-color) 5px, var(--body-bg-color) 5px);
 }
 
-#chat .self .text {
-    color: var(--body-color);
-}
-
 .irc-monospace, code {
-	color: var(--body-bg-color);
-	font-weight: bold;
+    color: var(--body-bg-color);
+    font-weight: bold;
 }
 
 #chat .chan .notice .user,
 #chat .notice .text,
 #chat .notice .time,
 .irc-fg2 {
-    color: var(--link-color) !important;
+    color: var(--body-bg-color);
+}
+
+#chat .chan .notice .user,
+#chat .notice .content,
+#chat .notice .time {
+    color: #0074d9!important;
 }
 
 #chat .toggle-content {
