@@ -328,7 +328,6 @@ textarea::placeholder,
 
 #chat .chan .notice .user,
 #chat .notice .content,
-#chat .notice .text,
 #chat .notice .time,
 .irc-fg2 {
     color: var(--link-color) !important;
