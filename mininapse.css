@@ -332,7 +332,7 @@ textarea::placeholder,
 #chat .chan .notice .user,
 #chat .notice .content,
 #chat .notice .time {
-    color: #0074d9!important;
+    color: var(--body-bg-color);
 }
 
 #chat .toggle-content {
