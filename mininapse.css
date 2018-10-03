@@ -317,16 +317,17 @@ textarea::placeholder,
     background: linear-gradient(to right, var(--date-marker-color) 5px, var(--body-bg-color) 5px);
 }
 
-#chat .self .text {
+#chat .self .content {
     color: var(--body-color);
 }
 
 .irc-monospace, code {
-	color: var(--body-bg-color);
-	font-weight: bold;
+    color: var(--body-bg-color);
+    font-weight: bold;
 }
 
 #chat .chan .notice .user,
+#chat .notice .content,
 #chat .notice .text,
 #chat .notice .time,
 .irc-fg2 {
