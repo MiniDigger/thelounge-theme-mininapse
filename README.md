@@ -1,14 +1,14 @@
 # thelounge-theme-mininapse [![pipeline status](https://gitlab.com/MiniDigger/thelounge-theme-mininapse/badges/master/pipeline.svg)](https://gitlab.com/MiniDigger/thelounge-theme-mininapse/commits/master)
-a dark, minimal theme for the irc client thelounge
+A dark, minimal theme for TheLounge IRC client
 
 ## Screenshots
 
-![https://i.imgur.com/rf4YiuW.png](https://i.imgur.com/rf4YiuW.png)  
-![https://i.imgur.com/X7485rY.png](https://i.imgur.com/X7485rY.png)  
+![https://github.com/MiniDigger/thelounge-theme-mininapse/raw/master/Preview-desktop.png](https://github.com/MiniDigger/thelounge-theme-mininapse/raw/master/Preview-desktop.png)  
+![https://github.com/MiniDigger/thelounge-theme-mininapse/raw/master/Preview-mobile.png](https://github.com/MiniDigger/thelounge-theme-mininapse/raw/master/Preview-mobile.png)  
 
 ## Installation
 
-when you have installed thelounge via npm:  
+- When you have installed thelounge via NPM/Yarn:  
 ```thelounge install thelounge-theme-mininapse```  
-when you have installed thelounge via source:  
+- When you have installed thelounge via source:  
 ```node index.js install thelounge-theme-mininapse```
