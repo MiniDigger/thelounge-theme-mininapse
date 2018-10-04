@@ -4,7 +4,6 @@ A dark, minimal theme for TheLounge IRC client
 ## Screenshots
 
 ![https://github.com/MiniDigger/thelounge-theme-mininapse/raw/master/Preview-desktop.png](https://github.com/MiniDigger/thelounge-theme-mininapse/raw/master/Preview-desktop.png)  
-![https://github.com/MiniDigger/thelounge-theme-mininapse/raw/master/Preview-mobile.png](https://github.com/MiniDigger/thelounge-theme-mininapse/raw/master/Preview-mobile.png)  
 
 ## Installation
 
