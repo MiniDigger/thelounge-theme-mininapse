@@ -1,4 +1,5 @@
-# thelounge-theme-mininapse [![pipeline status](https://gitlab.com/MiniDigger/thelounge-theme-mininapse/badges/master/pipeline.svg)](https://gitlab.com/MiniDigger/thelounge-theme-mininapse/commits/master)
+# thelounge-theme-mininapse [![pipeline status](https://gitlab.com/MiniDigger/thelounge-theme-mininapse/badges/master/pipeline.svg)](https://gitlab.com/MiniDigger/thelounge-theme-mininapse/commits/master) [![npm](https://img.shields.io/npm/dt/thelounge-theme-mininapse.svg)](https://www.npmjs.com/package/thelounge-theme-mininapse) [![npm](https://img.shields.io/npm/v/thelounge-theme-mininapse.svg)](https://www.npmjs.com/package/thelounge-theme-mininapse)
+
 A dark, minimal theme for TheLounge IRC client
 
 ## Screenshots
