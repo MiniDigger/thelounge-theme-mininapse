@@ -233,7 +233,7 @@ Authors:
 
 /* User list sidebar */
 #chat .user-mode {
-    padding: 8px 0px 0;
+    padding: 8px 0 0;
     margin-bottom: 0;
 }
 
@@ -321,7 +321,8 @@ textarea::placeholder,
     color: var(--body-color);
 }
 
-.irc-monospace, code {
+.irc-monospace, 
+code {
     color: var(--body-bg-color);
     font-weight: bold;
 }
@@ -376,7 +377,8 @@ textarea::placeholder,
 }
 
 /* Fileuploading */
-#form #submit, #form #upload {
+#form #submit,
+#form #upload {
     color: var(--highlight-border-color);
 }
 
