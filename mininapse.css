@@ -321,7 +321,7 @@ textarea::placeholder,
     color: var(--body-color);
 }
 
-.irc-monospace, 
+.irc-monospace,
 code {
     color: var(--body-bg-color);
     font-weight: bold;
