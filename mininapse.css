@@ -241,10 +241,6 @@ Authors:
     background: var(--body-bg-color);
 }
 
-#chat .names .user:hover {
-    opacity: 0.6;
-}
-
 /* Inputs */
 .input,
 .input:hover,
