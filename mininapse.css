@@ -157,6 +157,16 @@ Authors:
     color: var(--link-color);
 }
 
+.btn{
+    border-color: var(--link-color);
+    color: var(--link-color);
+}
+
+.btn:disabled, .btn:focus, .btn:hover {
+    background: var(--window-bg-color);
+    color: var(--dim-color);
+}
+
 #viewport .lt:hover,
 #viewport .rt:hover,
 #chat button.menu:hover,
