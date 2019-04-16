@@ -25,7 +25,7 @@
   },
   "devDependencies": {
     "stylelint": "~9.10.1",
-    "stylelint-config-standard": "~18.2.0"
+    "stylelint-config-standard": "~18.3.0"
   },
   "scripts": {
     "test": "stylelint mininapse.css",
