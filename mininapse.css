@@ -195,7 +195,7 @@ Authors:
     width: 170px;
 }
 
-@media (max-width: 768px) { #sidebar { width: 200px } }
+@media (max-width: 768px) { #sidebar { width: 200px; } }
 
 #sidebar .chan,
 #sidebar .empty {
@@ -242,7 +242,6 @@ Authors:
 #sidebar .not-secure .chan.lobby .lobby-wrap:hover {
     color: var(--highlight-bg-color);
 }
-
 
 /* User list sidebar */
 #chat .user-mode {
