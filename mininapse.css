@@ -191,15 +191,15 @@ Authors:
 }
 
 /* Network-/channel list sidebar */
+#sidebar {
+    width: 170px;
+}
+
+@media (max-width: 768px) { #sidebar { width: 200px } }
+
 #sidebar .chan,
 #sidebar .empty {
     color: var(--body-color);
-}
-
-#sidebar,
-#footer,
-.tse-scroll-content {
-    width: 170px;
 }
 
 #sidebar .chan,
@@ -242,6 +242,7 @@ Authors:
 #sidebar .not-secure .chan.lobby .lobby-wrap:hover {
     color: var(--highlight-bg-color);
 }
+
 
 /* User list sidebar */
 #chat .user-mode {
