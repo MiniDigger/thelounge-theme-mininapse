@@ -381,9 +381,3 @@ code {
 #upload-progressbar {
     background: var(--highlight-border-color);
 }
-
-/* 3.0.0-pre.7 fix */
-#windows #form .input {
-    background: var(--body-bg-color);
-    border-top: var(--body-bg-color);
-}
