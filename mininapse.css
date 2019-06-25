@@ -393,3 +393,8 @@ code {
 #upload-progressbar {
     background: var(--highlight-border-color);
 }
+
+/* Scrollbars */
+body {
+    scrollbar-color: var(--highlight-border-color) var(--body-bg-color);
+}
