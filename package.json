@@ -6,7 +6,8 @@
   "thelounge": {
     "css": "mininapse.css",
     "name": "Mininapse",
-    "type": "theme"
+    "type": "theme",
+    "themeColor": "#282525"
   },
   "license": "MIT",
   "homepage": "https://minidigger.github.io/thelounge-theme-mininapse",
