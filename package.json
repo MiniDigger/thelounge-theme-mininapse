@@ -25,7 +25,7 @@
     "url": "https://github.com/MiniDigger/thelounge-theme-mininapse/issues"
   },
   "devDependencies": {
-    "stylelint": "~11.0.0",
+    "stylelint": "~11.1.1",
     "stylelint-config-standard": "~19.0.0"
   },
   "scripts": {
