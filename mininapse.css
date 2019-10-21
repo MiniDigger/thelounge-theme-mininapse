@@ -8,7 +8,6 @@ Authors:
 - MiniDigger: https://github.com/MiniDigger
 - fnutt: https://github.com/fnutt
 */
-
 @import 'default.css';
 
 :root {
@@ -195,7 +194,11 @@ Authors:
     width: 170px;
 }
 
-@media (max-width: 768px) { #sidebar { width: 200px; } }
+@media (max-width: 768px) {
+    #sidebar {
+        width: 200px;
+    }
+}
 
 #sidebar .chan,
 #sidebar .empty {
