@@ -211,6 +211,10 @@ Authors:
     padding-top: 3px;
 }
 
+#sidebar .chan:hover .close {
+    display: unset;
+}
+
 #sidebar .network,
 #sidebar .network-placeholder {
     margin-bottom: 3px;
