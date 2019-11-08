@@ -347,6 +347,7 @@ code {
 
 #chat .toggle-content {
     background: var(--body-bg-color);
+    box-shadow: none;
 }
 
 #chat .toggle-text a {
