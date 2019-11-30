@@ -1,0 +1,45 @@
+name: Publish
+
+on:
+  release:
+    types: [published]
+    
+jobs:
+  publish:
+    name: Publish
+    
+    runs-on: ubuntu-latest
+    
+    steps:
+      - uses: actions/checkout@master
+        
+      - name: Setup Node.js
+        uses: actions/setup-node@v1
+        with:
+          node-version: 12.x
+          registry-url: "https://registry.npmjs.org/"
+
+      - name: Install
+        run: yarn --frozen-lockfile --non-interactive
+
+      - name: Setup git and yarn
+        run: |
+          git config user.email "admin@minidigger.me"
+          git config user.name "MiniDigger"
+          yarn config set version-git-tag false
+
+      - name: Bump version
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          version=$(echo "$GITHUB_REF" | sed "s/refs\/tags\/v//")
+          echo "Bumping version to $version"
+          yarn version --new-version $version
+          git add package.json
+          git commit -m "Bump version to $version"
+          git push "https://$GITHUB_ACTOR:$GITHUB_TOKEN@github.com/$GITHUB_REPOSITORY" HEAD:master
+
+      - name: Publish
+        run: yarn publish
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
