@@ -22,7 +22,7 @@ Authors:
     --unread-marker-color: #84ce88;
     --highlight-bg-color: #f58383;
     --highlight-border-color: #ef4657;
-    --overlay-bg-color: #0003; /* TODO check where this can be used */
+    --overlay-bg-color: rgba(0,0,0,0.9);
 }
 
 /* <editor-fold desc="hide bot spam"> */
