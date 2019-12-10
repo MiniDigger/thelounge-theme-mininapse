@@ -22,7 +22,7 @@ Authors:
     --unread-marker-color: #84ce88;
     --highlight-bg-color: #f58383;
     --highlight-border-color: #ef4657;
-    --overlay-bg-color: rgba(0,0,0,0.9);
+    --overlay-bg-color: rgba(0,0,0,0.7);
 }
 
 /* <editor-fold desc="hide bot spam"> */
@@ -422,4 +422,10 @@ code {
 
 #upload-progressbar {
     background: var(--highlight-border-color);
+}
+
+/* Image viewer */
+#image-viewer.opened {
+    -webki-backdrop-filter: blur(2px); /* edge combat, no ff or IE, sorry guys */
+    backdrop-filter: blur(2px); 
 }
