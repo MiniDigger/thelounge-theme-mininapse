@@ -335,14 +335,14 @@ textarea::placeholder,
 }
 
 /* Channels */
-#chat .chat-view .msg.highlight,
+#chat .chat-view[data-type=channel] .msg.highlight,
 /* TODO legacy, remove me */
 #chat .channel .msg.highlight {
     background: var(--body-bg-color);
     border-left: 5px solid var(--highlight-border-color);
 }
 
-#chat .chat-view .msg.highlight .content,
+#chat .chat-view[data-type=channel] .msg.highlight .content,
 /* TODO legacy, remove me */
 #chat .channel .msg.highlight .content {
     border-left: none;
