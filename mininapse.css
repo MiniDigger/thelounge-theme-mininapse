@@ -22,6 +22,7 @@ Authors:
     --unread-marker-color: #84ce88;
     --highlight-bg-color: #f58383;
     --highlight-border-color: #ef4657;
+    --overlay-bg-color: #0003; /* TODO check where this can be used */
 }
 
 /* <editor-fold desc="hide bot spam"> */
@@ -140,7 +141,7 @@ Authors:
 
 /* Borders */
 #chat .content,
-#windows #chat .header,
+#chat .header,
 #chat .user-mode::before,
 #chat .userlist {
     border-color: var(--window-bg-color);
@@ -176,6 +177,7 @@ Authors:
 }
 
 /* Active/hover */
+.channel-list-item:hover,
 .context-menu-item:focus,
 .textcomplete-item:focus,
 .context-menu-item:hover,
@@ -184,6 +186,7 @@ Authors:
 #chat .userlist .user.active,
 #sidebar .active,
 #sidebar .active:hover,
+/* TDOO legacy, remove me */
 #sidebar .chan:hover,
 #footer button:hover {
     background-color: var(--active-bg-color);
@@ -200,11 +203,15 @@ Authors:
     }
 }
 
+.channel-list-item,
+/* TDOO legacy, remove me */
 #sidebar .chan,
 #sidebar .empty {
     color: var(--body-color);
 }
 
+.channel-list-item,
+/* TDOO legacy, remove me */
 #sidebar .chan,
 #sidebar .chan-placeholder {
     padding-bottom: 3px;
@@ -227,18 +234,31 @@ Authors:
 
 #sidebar .logo,
 #sidebar .logo-inverted,
+.channel-list-item::before,
+/* TDOO legacy, remove me */
 #sidebar .chan::before,
+#sidebar .channel-list-item[data-type="lobby"] .add-channel:not(.opened),
+/* TDOO legacy, remove me */
 #sidebar .lobby .add-channel:not(.opened),
 .not-secure-tooltip,
 .not-secure-icon {
     display: none;
 }
 
+/* TDOO legacy, remove me */
 #sidebar .chan.lobby,
-#sidebar .not-secure .chan.lobby {
+#sidebar .channel-list-item[data-type="lobby"],
+/* TDOO legacy, remove me */
+#sidebar .not-secure .chan.lobby,
+#sidebar .not-secure .channel-list-item[data-type="lobby"] {
     color: var(--highlight-border-color);
 }
 
+.channel-list-item[data-type="lobby"].active,
+.channel-list-item[data-type="lobby"] .lobby-wrap:hover,
+.not-secure .channel-list-item[data-type="lobby"].active,
+.not-secure .channel-list-item[data-type="lobby"] .lobby-wrap:hover,
+/* TODO legacy, remove all below */
 #sidebar .chan.lobby.active,
 #sidebar .chan.lobby .lobby-wrap:hover,
 #sidebar .not-secure .chan.lobby.active,
@@ -289,11 +309,11 @@ textarea::placeholder,
 }
 
 /* Windows */
-#windows .window {
+.window {
     box-shadow: none;
 }
 
-#windows .window h2 {
+.window h2 {
     color: var(--body-color);
 }
 
@@ -315,11 +335,15 @@ textarea::placeholder,
 }
 
 /* Channels */
+#chat .chat-view .msg.highlight,
+/* TODO legacy, remove me */
 #chat .channel .msg.highlight {
     background: var(--body-bg-color);
     border-left: 5px solid var(--highlight-border-color);
 }
 
+#chat .chat-view .msg.highlight .content,
+/* TODO legacy, remove me */
 #chat .channel .msg.highlight .content {
     border-left: none;
 }
@@ -338,7 +362,9 @@ code {
     font-weight: bold;
 }
 
+/* TODO legacy, remove me */
 #chat .chan .notice .user,
+#chat .chat-view .notice .user,
 #chat .notice .content,
 #chat .notice .time,
 .irc-fg2 {
@@ -354,7 +380,7 @@ code {
     color: var(--body-color);
 }
 
-#windows .header .topic {
+.header .topic {
     color: var(--body-color);
 }
 
