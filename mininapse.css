@@ -23,6 +23,7 @@ Authors:
     --highlight-bg-color: #f58383;
     --highlight-border-color: #ef4657;
     --overlay-bg-color: rgba(0,0,0,0.7);
+    --upload-progressbar-color: #ef4657;
 }
 
 /* <editor-fold desc="hide bot spam"> */
@@ -287,6 +288,11 @@ input,
     border-color: var(--dim-color) !important;
 }
 
+.btn:active, .btn:focus, .input:focus {
+    border-color: rgba(0,0,0,0) !important;
+    box-shadow: 0 0 0 3px var(--highlight-border-color);
+}
+
 .input::placeholder,
 input::placeholder,
 textarea::placeholder,
@@ -418,10 +424,6 @@ code {
 #form #submit,
 #form #upload {
     color: var(--highlight-border-color);
-}
-
-#upload-progressbar {
-    background: var(--highlight-border-color);
 }
 
 /* Image viewer */
