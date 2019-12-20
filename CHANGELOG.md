@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.19.0
+
+Update to thelounge 4.0, support previous-source
+
 ## 2.11.0
 
 NPM search optimization, lmao
