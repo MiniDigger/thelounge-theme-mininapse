@@ -368,6 +368,11 @@ code {
     font-weight: bold;
 }
 
+.previous-source .from,
+.previous-source .time {
+    visibility: hidden;
+}
+
 /* TODO legacy, remove me */
 #chat .chan .notice .user,
 #chat .chat-view .notice .user,
