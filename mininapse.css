@@ -22,7 +22,7 @@ Authors:
     --unread-marker-color: #84ce88;
     --highlight-bg-color: #f58383;
     --highlight-border-color: #ef4657;
-    --overlay-bg-color: rgba(0,0,0,0.7);
+    --overlay-bg-color: rgba(0, 0, 0, 0.7);
     --upload-progressbar-color: #ef4657;
 }
 
@@ -269,8 +269,10 @@ input,
     border-color: var(--dim-color) !important;
 }
 
-.btn:active, .btn:focus, .input:focus {
-    border-color: rgba(0,0,0,0) !important;
+.btn:active,
+.btn:focus,
+.input:focus {
+    border-color: rgba(0, 0, 0, 0) !important;
     box-shadow: 0 0 0 3px var(--highlight-border-color);
 }
 
@@ -352,7 +354,7 @@ code {
 #chat .msg[data-type=notice] .content,
 #chat .msg[data-type=notice] .time,
 #chat .msg[data-type=notice] .user,
-#chat .msg[data-type=notice] .from .user:before {
+#chat .msg[data-type=notice] .from .user::before {
     color: var(--link-color) !important;
 }
 
@@ -419,5 +421,5 @@ code {
 /* Image viewer */
 #image-viewer.opened {
     -webki-backdrop-filter: blur(2px); /* edge combat, no ff or IE, sorry guys */
-    backdrop-filter: blur(2px); 
+    backdrop-filter: blur(2px);
 }
