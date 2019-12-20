@@ -236,21 +236,13 @@ Authors:
 #sidebar .logo,
 #sidebar .logo-inverted,
 .channel-list-item::before,
-/* TDOO legacy, remove me */
-#sidebar .chan::before,
 #sidebar .channel-list-item[data-type="lobby"] .add-channel:not(.opened),
-/* TDOO legacy, remove me */
-#sidebar .lobby .add-channel:not(.opened),
 .not-secure-tooltip,
 .not-secure-icon {
     display: none;
 }
 
-/* TDOO legacy, remove me */
-#sidebar .chan.lobby,
 #sidebar .channel-list-item[data-type="lobby"],
-/* TDOO legacy, remove me */
-#sidebar .not-secure .chan.lobby,
 #sidebar .not-secure .channel-list-item[data-type="lobby"] {
     color: var(--highlight-border-color);
 }
@@ -258,12 +250,7 @@ Authors:
 .channel-list-item[data-type="lobby"].active,
 .channel-list-item[data-type="lobby"] .lobby-wrap:hover,
 .not-secure .channel-list-item[data-type="lobby"].active,
-.not-secure .channel-list-item[data-type="lobby"] .lobby-wrap:hover,
-/* TODO legacy, remove all below */
-#sidebar .chan.lobby.active,
-#sidebar .chan.lobby .lobby-wrap:hover,
-#sidebar .not-secure .chan.lobby.active,
-#sidebar .not-secure .chan.lobby .lobby-wrap:hover {
+.not-secure .channel-list-item[data-type="lobby"] .lobby-wrap:hover {
     color: var(--highlight-bg-color);
 }
 
@@ -341,16 +328,12 @@ textarea::placeholder,
 }
 
 /* Channels */
-#chat .chat-view[data-type=channel] .msg.highlight,
-/* TODO legacy, remove me */
-#chat .channel .msg.highlight {
+#chat .chat-view[data-type=channel] .msg.highlight {
     background: var(--body-bg-color);
     border-left: 5px solid var(--highlight-border-color);
 }
 
-#chat .chat-view[data-type=channel] .msg.highlight .content,
-/* TODO legacy, remove me */
-#chat .channel .msg.highlight .content {
+#chat .chat-view[data-type=channel] .msg.highlight .content {
     border-left: none;
 }
 
@@ -373,8 +356,6 @@ code {
     visibility: hidden;
 }
 
-/* TODO legacy, remove me */
-#chat .chan .notice .user,
 #chat .chat-view .notice .user,
 #chat .notice .content,
 #chat .notice .time,
@@ -400,14 +381,10 @@ code {
 }
 
 /* MOTD */
-/* TODO legacy, remove me */
-#chat .motd .from::before,
 #chat .msg[data-type=motd] .text {
     color: var(--highlight-border-color);
 }
 
-/* TODO legacy, remove me */
-#chat .msg.motd .text,
 #chat .msg[data-type=motd] .text {
     background-color: var(--dark-bg-color);
 }
