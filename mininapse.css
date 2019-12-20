@@ -187,8 +187,6 @@ Authors:
 #chat .userlist .user.active,
 #sidebar .active,
 #sidebar .active:hover,
-/* TDOO legacy, remove me */
-#sidebar .chan:hover,
 #footer button:hover {
     background-color: var(--active-bg-color);
 }
@@ -205,15 +203,11 @@ Authors:
 }
 
 .channel-list-item,
-/* TDOO legacy, remove me */
-#sidebar .chan,
 #sidebar .empty {
     color: var(--body-color);
 }
 
 .channel-list-item,
-/* TDOO legacy, remove me */
-#sidebar .chan,
 #sidebar .chan-placeholder {
     padding-bottom: 3px;
     padding-top: 3px;
@@ -351,11 +345,6 @@ code {
     font-weight: bold;
 }
 
-.previous-source .from,
-.previous-source .time {
-    visibility: hidden;
-}
-
 #chat .chat-view .notice .user,
 #chat .notice .content,
 #chat .notice .time,
@@ -378,6 +367,17 @@ code {
 
 .header .topic {
     color: var(--body-color);
+}
+
+/* previous source */
+.previous-source .from,
+.previous-source .time {
+    visibility: hidden;
+}
+
+.previous-source[data-from="DiscordBot"] .time,
+.previous-source:hover .time {
+    visibility: visible;
 }
 
 /* MOTD */
