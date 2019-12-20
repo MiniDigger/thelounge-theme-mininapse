@@ -373,7 +373,11 @@ code {
 #chat .chat-view .notice .user,
 #chat .notice .content,
 #chat .notice .time,
-.irc-fg2 {
+.irc-fg2,
+#chat .msg[data-type=notice] .content,
+#chat .msg[data-type=notice] .time,
+#chat .msg[data-type=notice] .user,
+#chat .msg[data-type=notice] .from .user:before {
     color: var(--link-color) !important;
 }
 
@@ -391,11 +395,15 @@ code {
 }
 
 /* MOTD */
-#chat .motd .from::before {
+/* TODO legacy, remove me */
+#chat .motd .from::before,
+#chat .msg[data-type=motd] .text {
     color: var(--highlight-border-color);
 }
 
-#chat .msg.motd .text {
+/* TODO legacy, remove me */
+#chat .msg.motd .text,
+#chat .msg[data-type=motd] .text {
     background-color: var(--dark-bg-color);
 }
 
