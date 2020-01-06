@@ -383,9 +383,10 @@ code {
 }
 
 @media (max-width: 479px) {
-  #chat .previous-source .from, #chat .previous-source .time {
-    visibility: visible;
-  }
+    #chat .previous-source .from, 
+    #chat .previous-source .time {
+        visibility: visible;
+    }
 }
 
 /* MOTD */
