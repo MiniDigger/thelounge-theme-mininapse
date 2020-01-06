@@ -382,6 +382,12 @@ code {
     visibility: visible;
 }
 
+@media (max-width: 479px) {
+  #chat .previous-source .from, #chat .previous-source .time {
+    visibility: visible;
+  }
+}
+
 /* MOTD */
 #chat .msg[data-type=motd] .text {
     color: var(--highlight-border-color);
