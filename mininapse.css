@@ -187,6 +187,7 @@ Authors:
 #chat .userlist .user.active,
 #sidebar .active,
 #sidebar .active:hover,
+#footer button.active,
 #footer button:hover {
     background-color: var(--active-bg-color);
 }
