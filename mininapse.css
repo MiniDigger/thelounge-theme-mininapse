@@ -154,7 +154,8 @@ Authors:
 #chat button.menu,
 #chat .count::before,
 #form #submit,
-#footer button {
+#footer button,
+.jump-to-input::before {
     color: var(--link-color);
 }
 
