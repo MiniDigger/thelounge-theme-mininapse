@@ -374,8 +374,7 @@ code {
 }
 
 /* previous source */
-.previous-source .from,
-.previous-source .time {
+.previous-source .from {
     visibility: hidden;
 }
 
