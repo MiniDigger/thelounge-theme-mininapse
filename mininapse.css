@@ -154,8 +154,7 @@ Authors:
 #chat button.menu,
 #chat .count::before,
 #form #submit,
-#footer button,
-.jump-to-input::before {
+#footer button {
     color: var(--link-color);
 }
 
@@ -248,6 +247,12 @@ Authors:
 .not-secure .channel-list-item[data-type="lobby"].active,
 .not-secure .channel-list-item[data-type="lobby"] .lobby-wrap:hover {
     color: var(--highlight-bg-color);
+}
+
+.jump-to-input .input,
+.jump-to-input::before {
+    color: var(--link-color);
+    background-color: var(--active-bg-color);
 }
 
 /* User list sidebar */
