@@ -280,7 +280,7 @@ input,
 .btn:focus,
 .input:focus {
     border-color: rgba(0, 0, 0, 0) !important;
-    box-shadow: 0 0 0 3px var(--window-bg-color);
+    box-shadow: 0 0 0 1px var(--highlight-border-color);
 }
 
 .input::placeholder,
