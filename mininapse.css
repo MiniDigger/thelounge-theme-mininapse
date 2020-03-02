@@ -252,7 +252,7 @@ Authors:
 .jump-to-input .input,
 .jump-to-input::before {
     color: var(--link-color);
-    background-color: var(--active-bg-color);
+    background-color: var(--window-bg-color);
 }
 
 /* User list sidebar */
