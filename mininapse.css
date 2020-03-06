@@ -255,6 +255,12 @@ Authors:
     background-color: var(--window-bg-color);
 }
 
+/* Search messages pull request */
+/* https://github.com/thelounge/thelounge/pull/3664 */
+form.message-search input {
+    background-color: var(--window-bg-color);
+}
+   
 /* User list sidebar */
 #chat .user-mode {
     padding: 8px 0 0;
