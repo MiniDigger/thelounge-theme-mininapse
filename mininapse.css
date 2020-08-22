@@ -444,3 +444,8 @@ code {
     -webki-backdrop-filter: blur(2px); /* edge combat, no ff or IE, sorry guys */
     backdrop-filter: blur(2px);
 }
+
+/* Mentions popup */
+.mentions-popup .msg .content {
+    background-color: var(--dark-bg-color);
+}
