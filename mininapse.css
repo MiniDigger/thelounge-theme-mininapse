@@ -155,7 +155,8 @@ Authors:
 #chat .count::before,
 #form #submit,
 #footer button,
-#chat button.mentions::before {
+#chat button.mentions::before,
+#chat form.message-search button {
     color: var(--link-color);
 }
 
