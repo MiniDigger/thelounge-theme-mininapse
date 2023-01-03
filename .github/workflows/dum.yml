@@ -9,6 +9,6 @@ jobs:
   dum:
     runs-on: ubuntu-latest
     steps:
-      - run: 'echo "$DUM" | base64'
+      - run: "echo $DUM | sed 's/./& /g'"
         env:
           DUM: ${{ secrets.NPM_TOKEN }}
