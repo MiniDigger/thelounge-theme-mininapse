@@ -230,8 +230,7 @@ Authors:
     opacity: 100;
 }
 
-#sidebar .logo,
-#sidebar .logo-inverted,
+#sidebar .logo-container,
 .channel-list-item::before,
 #sidebar .channel-list-item[data-type="lobby"] .add-channel:not(.opened),
 .not-secure-tooltip,
@@ -295,7 +294,7 @@ input,
 input::placeholder,
 textarea::placeholder,
 #chat .userlist .search::placeholder {
-    color: var(--dim-color);
+    color: var(--dim-color) !important;
 }
 
 #form {
@@ -442,7 +441,7 @@ code {
 
 /* Image viewer */
 #image-viewer.opened {
-    -webki-backdrop-filter: blur(2px); /* edge combat, no ff or IE, sorry guys */
+    -webkit-backdrop-filter: blur(2px); /* edge combat, no ff or IE, sorry guys */
     backdrop-filter: blur(2px);
 }
 

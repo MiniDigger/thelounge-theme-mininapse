@@ -4,22 +4,13 @@ on: [push, pull_request]
 
 jobs:
   build:
-    name: Node ${{ matrix.node_version }} on ${{ matrix.os }}
-    strategy:
-      matrix:
-        os: [ubuntu-latest, windows-latest, macOS-latest]
-        node_version: [
-          10.x, # EOL: April 2021
-          12.x, # EOL: April 2022
-        ]
-
-    runs-on: ${{ matrix.os }}
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@master
       - name: Setup Node.js
         uses: actions/setup-node@v2
         with:
-          node-version: ${{ matrix.node_version }}
+          node-version: 18
       - name: Install
         run: yarn --frozen-lockfile --non-interactive
 #      - name: Build
